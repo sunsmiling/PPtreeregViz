@@ -1,0 +1,139 @@
+#' Pick obs according to class range
+#'
+#' Pick obs according to class range
+#' @title Print sublime observations from choosed Class
+#' @param PPTreeregOBJ PPTreereg object
+#' @param explainer explainer
+#' @param chooseClass ex class1
+#' @param obsnum default 1
+#' @param ... arguments to be passed to methods
+#' @export
+#' @examples
+#' \dontrun{modelPP <- caret::train(mpg~.,data =mtcars,
+#' method = PPTreereg.M1 ,
+#' DEPTH=2,PPmethod="LDA")
+#' explainer_PP <- lime::lime(mtcars[,-1], modelPP)
+#' SubPick_PPTreereg(PP_Tree, explainer_PP, "class1", 3)
+#' }
+#' @keywords submodular
+
+SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,... ){
+  case = BIN=1
+  SubmodularPick <- function(explainer, data, method='sample',
+                             sample_size=1000, num_exps_desired=5, num_features=10,...){
+    if(method=='sample'){
+      if(sample_size>dim(data)[1]){
+        warning("Requested sample size larger than size of input data. Using all data.")
+        sample_size = dim(data)[1]
+      }
+      all_indices = sample(dim(data)[1])
+      sample_indices = all_indices[1:sample_size]
+
+    }else if(method=='full'){
+      sample_indices = 1:dim(data)[1]
+    }else{
+      stop('Method must be \'sample\' or \'full\'')
+    }
+
+    # Generate Explanations
+    self_explanations <- data.frame()
+    pb <- progress::progress_bar$new(total = length(sample_indices))
+    for(i in sample_indices){
+      pb$tick()
+      self_explanations <- rbind(self_explanations, lime::explain(data[i,],explainer, n_features=num_features))
+    }
+    # Error handling
+    if(num_exps_desired != as.integer(num_exps_desired)){
+      stop('Requested number of explanations should be an integer')}
+    if(num_exps_desired > dim(self_explanations)[1]){
+      warning("Requested number of explanations larger than total number of explanations,
+    returning all explanations instead.")
+    }
+
+
+
+    num_exps_desired = min(num_exps_desired, sample_size)
+
+    # Find all the explanation model features used. Defines the dimension d'
+    feature_iter = 1
+    features_dict = data.frame('BIN'= NA)
+    for(exp in 1:nrow(self_explanations)){
+      self_exp <-  self_explanations[exp,]
+      feature_name <- self_exp$feature
+
+      if(self_exp$feature%in% colnames(features_dict)=='FALSE'){
+        features_dict[,feature_name]<- feature_iter
+        feature_iter <- feature_iter + 1
+      }
+    }
+    features_dict <- features_dict %>% dplyr::select(-c(BIN))
+    d_prime = dim(features_dict)[2]
+
+    # Create the n x d' dimensional 'explanation matrix', W
+    W = replicate(d_prime,numeric(sample_size))
+
+
+    for(exp_1 in 1: sample_size){
+      self_exp_1 <-   self_explanations[c(((exp_1-1)*d_prime)+1):(exp_1*d_prime),]
+      W[exp_1,as.numeric(features_dict[self_exp_1$feature])] <-self_exp_1$feature_weight
+    }
+
+
+    # Create the global importance vector, I_j described in the paper
+    importance = sqrt(colSums(abs(W)))
+
+    # Now run the SP-LIME greedy algorithm
+    remaining_indices = 1:sample_size
+    remaining_indices = remaining_indices[!duplicated(remaining_indices)]
+
+    V <- c()
+    V_times <- c()
+
+    for( k in c(1:num_exps_desired)){
+      best = 0
+      best_ind = NA
+      current = 0
+
+      for (j in remaining_indices){
+        current = sum(abs(W)[c(V,j),] %*% importance)
+        if(current >= best){
+          best = current
+          best_ind = j}
+      }
+      V <- c(V, best_ind)
+      remaining_indices <-  setdiff(remaining_indices, best_ind)
+    }
+
+    sp_explanations <- self_explanations %>%
+      dplyr::filter(case %in% unique(self_explanations$case)[V])
+
+    my_list <- list("best_index" = V, "sample_ind" = sample_indices[V], "sp_expl"= sp_explanations )
+    return(my_list)
+  }
+
+
+
+
+
+  x <- PPTreeregOBJ
+  intClass <- as.integer(substring(chooseClass,6))
+  if(sum(x$Tree.result$origclass==intClass &
+         as.integer(names(predict.PPTreereg(x)))==intClass) < obsnum){
+    warning("Not enough predict values equally to origdata.")
+    df <- as.data.frame(x$Tree.result$origdata[x$Tree.result$origclass==intClass,])
+    set.seed(1)
+    pick <- SubmodularPick(explainer,df, method = 'sample',
+                           sample_size=nrow(df),num_exps_desired=obsnum,
+                           num_features = 10)$sample_ind
+    obs_name <- row.names(df[pick,])
+  }else{
+    df <- as.data.frame(x$Tree.result$origdata[x$Tree.result$origclass==intClass &
+                                                 as.integer(names(predict.PPTreereg(x)))==intClass,])
+    set.seed(1)
+    pick <- SubmodularPick(explainer,df, method = 'sample',
+                           sample_size=nrow(df),num_exps_desired=obsnum,
+                           num_features = 10)$sample_ind
+    obs_name <- row.names(df[pick,])
+  }
+  obs_name
+}

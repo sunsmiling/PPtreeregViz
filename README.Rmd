@@ -1,0 +1,125 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# PPtreeregViz
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of PPtreeregViz is to ...
+
+## Installation
+
+You can install the released version of PPtreeregViz from [CRAN](https://CRAN.R-project.org) with:
+
+이 패키지는 사영추적회귀 나무 기법을 모델링을 하고 이 모델을 시각적으로 해석하기 위한 기법들을 담고 있다.
+
+``` r
+install.packages("PPtreeregViz")
+```
+
+## Example
+
+## 나무 만들기
+```{r example}
+library(PPtreeregViz)
+library(dplyr)
+library(ggplot2)
+
+data("insurance")
+set.seed(123)
+proportion = 0.9
+idx_train = sample(1:nrow(insurance), size = round(proportion * nrow(insurance)))
+sample_train = insurance[idx_train, ]
+sample_test =  insurance[-idx_train, ]
+sample_one <- sample_test[sample(1:nrow(sample_test),1),-7]
+
+model <- PPTreereg(charges~., data = sample_train, DEPTH = 2)
+
+plot(model)
+```
+
+```{r}
+pp_ggparty(model, "age")
+```
+
+
+## Variable Importance based on logic
+```{r}
+Tree.Imp <- PPimportance(model) 
+plot(Tree.Imp)
+```
+```{r}
+plot(Tree.Imp, marginal = TRUE)
+```
+```{r}
+PPregNodeViz(model,node.id = 4)
+```
+
+```{r}
+PPregNodeViz(model,node.id = 7)
+```
+
+```{r}
+PPregVarViz(model,"age")
+```
+
+
+
+## Calculate SHAP for pptreereeg method
+
+```{r}
+ppshapr.simple(model,sample_one,5)$dt
+```
+```{r}
+waterfallplot(PPTreeregOBJ = model, testObs = sample_one, final.rule = 5, method="simple") 
+```
+
+```{r}
+decisionplot(PPTreeregOBJ = model, testObs = sample_one, final.rule = 5, method="simple",varImp = "shapImp" ) 
+```
+
+
+## DALEX
+
+This approach directly measures feature importance by observing how random re-shuffling (thus preserving the distribution of the variable) of each predictor influences model performance.
+
+permutation importance overestimates the importance of correlated predictors Strobl et al (2008)
+```{r message=FALSE, warning=FALSE}
+library("DALEX")
+new_explainer <- explain_PP(PPTreeregOBJ = model, data = sample_train[,-7], 
+                            y = sample_train[,7], final.rule = 4)
+class(new_explainer)
+DALEX::model_performance(new_explainer)
+DALEX::model_performance(new_explainer) %>% plot()
+DALEX::model_profile(new_explainer, variables = "age") %>% plot()
+DALEX::model_profile(new_explainer, variables = "bmi") %>%
+  plot(geom="profiles")
+DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
+```
+
+
+## submodularPick 
+
+```{r}
+PP_model <- caret::train(charges~.,data = sample_train,
+                        method = PPTreereg.M1 ,
+                        DEPTH=2,
+                        PPmethod="LDA")
+lime_explainer <- lime::lime(sample_train[,-7], PP_model)
+class1s_obs <- SubPick_PPTreereg(model, lime_explainer, "class1", 10) 
+class1s_obs 
+```
+ 

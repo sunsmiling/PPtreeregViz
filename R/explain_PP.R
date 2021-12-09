@@ -7,18 +7,6 @@
 #' @param y numeric vector with outputs / scores. If provided then it shall have the same size as data
 #' @param final.rule rule to calculate the final node value
 #' @param ... arguments to be passed to methods
-#' @examples
-#' \dontrun{library(DALEX)
-#' library(PPtreeRegViz)
-#' data(mtcars)
-#' PP_Tree <- PPtreeregViz::PPTreereg(mpg~.,data=mtcars)
-#' explainer_PPTreereg <- explain_PP(model = PP_Tree,
-#' data = mtcars[, -1], y = mtcars[,1], final.rule = 4)
-#' # model performance plot
-#' DALEX::model_performance(explainer_PPTreereg) %>% plot()
-#' #Break Down Profile
-#' DALEX::predict_parts(explainer_PPTreereg, new_observation =  mtcars[1,]) %>% plot()
-#' }
 #' @export
 
 explain_PP <- function(PPTreeregOBJ, data, y, final.rule,...){

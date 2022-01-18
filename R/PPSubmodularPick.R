@@ -20,7 +20,7 @@
 SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,... ){
   case = BIN=1
   SubmodularPick <- function(explainer, data, method='sample',
-                             sample_size=1000, num_exps_desired=5, num_features=10,...){
+                             sample_size=1000, num_exps_desired=5, num_features=20,...){
     if(method=='sample'){
       if(sample_size>dim(data)[1]){
         warning("Requested sample size larger than size of input data. Using all data.")
@@ -124,7 +124,7 @@ SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,..
     set.seed(1)
     pick <- SubmodularPick(explainer,df, method = 'sample',
                            sample_size=nrow(df),num_exps_desired=obsnum,
-                           num_features = 10)$sample_ind
+                           num_features = 20)$sample_ind
     obs_name <- row.names(df[pick,])
   }else{
     df <- as.data.frame(x$Tree.result$origdata[x$Tree.result$origclass==intClass &
@@ -132,7 +132,7 @@ SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,..
     set.seed(1)
     pick <- SubmodularPick(explainer,df, method = 'sample',
                            sample_size=nrow(df),num_exps_desired=obsnum,
-                           num_features = 10)$sample_ind
+                           num_features = 20)$sample_ind
     obs_name <- row.names(df[pick,])
   }
   obs_name

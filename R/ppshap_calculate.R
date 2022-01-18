@@ -67,6 +67,11 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule){
   leaf_len = length(PPTreeregOBJ$class.num)
 
   x_train <- data.table::as.data.table(PPTreeregOBJ$Tree.result$origdata)
+  #####
+  if(class(testObs) == "numeric"){
+    testObs <- as.data.frame(t(testObs))
+  }
+  ####
   x_test <- data.table::as.data.table(testObs)
   feature_names <- names(x_train)
   n_features <- ncol(x_train)
@@ -160,6 +165,9 @@ ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule){
 
   finalRule = as.integer(final.rule)
   leaf_len = length(PPTreeregOBJ$class.num)
+  if(class(testObs) == "numeric"){
+    testObs <- as.data.frame(t(testObs))
+  }
 
   x_train <- data.table::as.data.table(PPTreeregOBJ$Tree.result$origdata)
   x_test <- data.table::as.data.table(testObs)

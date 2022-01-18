@@ -78,64 +78,64 @@ PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
       minY<-min(c(Y,pred.data))
       maxY<-max(c(Y,pred.data))
       p1<-ggplot2::ggplot(plot.data,ggplot2::aes(y=pred.data,x=Y))+
-          ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
-          ggplot2::xlab("Observed Y")+
-          ggplot2::xlim(minY,maxY)+
-          ggplot2::ylim(minY,maxY)+
-          ggplot2::coord_fixed()+
-          ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-          ggplot2::ggtitle(paste("Final Rule 1-MSE =",round(MSE,2)))
+         ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
+         ggplot2::xlab("Observed Y")+
+         ggplot2::xlim(minY,maxY)+
+         ggplot2::ylim(minY,maxY)+
+         ggplot2::coord_fixed()+
+         ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+         ggplot2::ggtitle(paste("Final Rule 1-MSE =",round(MSE,2)))
 
       pred.data<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=2)
       plot.data<-data.frame(pred.data,Y)
       MSE<- mean((pred.data-Y)^2)
       p2<-ggplot2::ggplot(plot.data,ggplot2::aes(y=pred.data,x=Y))+
-          ggplot2::geom_point()+
-          ggplot2::ylab("Fitted Y")+
-          ggplot2::xlab("Observed Y")+
-          ggplot2::xlim(minY,maxY)+
-          ggplot2::ylim(minY,maxY)+
-          ggplot2::coord_fixed()+
-          ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-          ggplot2::ggtitle(paste("Final Rule 2-MSE =",round(MSE,2)))
+         ggplot2::geom_point()+
+         ggplot2::ylab("Fitted Y")+
+         ggplot2::xlab("Observed Y")+
+         ggplot2::xlim(minY,maxY)+
+         ggplot2::ylim(minY,maxY)+
+         ggplot2::coord_fixed()+
+         ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+         ggplot2::ggtitle(paste("Final Rule 2-MSE =",round(MSE,2)))
       p3<-ggplot2::ggplot()+
-            ggplot2::theme_bw()+
-            ggplot2::theme(panel.border = ggplot2::element_rect(color="white"))
+         ggplot2::theme_bw()+
+         ggplot2::theme(panel.border = ggplot2::element_rect(color="white"))
 
       pred.data<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=3)
       plot.data<-data.frame(pred.data,Y)
       MSE<- mean((pred.data-Y)^2)
       p4<-ggplot2::ggplot(plot.data,ggplot2::aes(y=pred.data,x=Y))+
-          ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
-          ggplot2::xlab("Observed Y")+
-          ggplot2::xlim(minY,maxY)+
-          ggplot2::ylim(minY,maxY)+
-          ggplot2::coord_fixed()+
-          ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-          ggplot2::ggtitle(paste("Final Rule 3-MSE =",round(MSE,2)))
+         ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
+         ggplot2::xlab("Observed Y")+
+         ggplot2::xlim(minY,maxY)+
+         ggplot2::ylim(minY,maxY)+
+         ggplot2::coord_fixed()+
+         ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+         ggplot2::ggtitle(paste("Final Rule 3-MSE =",round(MSE,2)))
       pred.data<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=4)
       plot.data<-data.frame(pred.data,Y)
       MSE<- mean((pred.data-Y)^2)
       p5<-ggplot2::ggplot(plot.data,ggplot2::aes(y=pred.data,x=Y))+
-          ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
-          ggplot2::xlab("Observed Y")+
-          ggplot2::xlim(minY,maxY)+
-          ggplot2::ylim(minY,maxY)+
-          ggplot2::coord_fixed()+
-          ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-          ggplot2::ggtitle(paste("Final Rule 4-MSE =",round(MSE,2)))
+         ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
+         ggplot2::xlab("Observed Y")+
+         ggplot2::xlim(minY,maxY)+
+         ggplot2::ylim(minY,maxY)+
+         ggplot2::coord_fixed()+
+         ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+         ggplot2::ggtitle(paste("Final Rule 4-MSE =",round(MSE,2)))
 
       pred.data<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=5)
       plot.data<-data.frame(pred.data,Y)
       MSE<- mean((pred.data-Y)^2)
       p6<-ggplot2::ggplot(plot.data,ggplot2::aes(y=pred.data,x=Y))+
-          ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
-          ggplot2::xlab("Observed Y")+
-          ggplot2::xlim(minY,maxY)+
-          ggplot2::ylim(minY,maxY)+
-          ggplot2::coord_fixed()+
-          ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-          ggplot2::ggtitle(paste("Final Rule 5-MSE =",round(MSE,2)))
+         ggplot2::geom_point()+ ggplot2::ylab("Fitted Y")+
+         ggplot2::xlab("Observed Y")+
+         ggplot2::xlim(minY,maxY)+
+         ggplot2::ylim(minY,maxY)+
+         ggplot2::coord_fixed()+
+         ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+         ggplot2::ggtitle(paste("Final Rule 5-MSE =",round(MSE,2)))
       gridExtra::grid.arrange(p1,p2,p3,p4,p5,p6,ncol=3)
    } else if(TS[node.id,2]!=0){
       selG<-searchGroup(node.id,TS,gName)
@@ -146,7 +146,7 @@ PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
 
 
       proj.data<-c(as.matrix(origdata)%*%
-                     as.matrix(Alpha[TS[node.id,4],]))[sel.id]
+                      as.matrix(Alpha[TS[node.id,4],]))[sel.id]
       proj.class<-factor(round(PPTreeregOBJ$mean.G[origclass[sel.id]],3))
       Y<-PPTreeregOBJ$origY[sel.id]
       plot.data<-data.frame(proj.data,origclass=proj.class,Y)
@@ -154,45 +154,45 @@ PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
       min.X<-min(proj.data)
       max.X<-max(proj.data)
       cut.index.Y<-PPTreeregOBJ$cut.class[
-             max(final.search(PPtreeOBJ,node.id,"left"))]
+         max(final.search(PPtreeOBJ,node.id,"left"))]
       colorGroup<-1 # dummy for removing "NOTE: no visible binding"
       plot.data<-data.frame(proj.data,origclass=proj.class,Y,
                             colorGroup=factor(ifelse(Y<=cut.index.Y,1,2)))
       p1<- ggplot2::ggplot(data = plot.data)+
-           ggplot2::geom_point(ggplot2::aes(x = proj.data,y=Y,color=colorGroup,
-                               fill=colorGroup),show.legend = FALSE,alpha=0.5)+
+         ggplot2::geom_point(ggplot2::aes(x = proj.data,y=Y,color=colorGroup,
+                                          fill=colorGroup),show.legend = FALSE,alpha=0.5)+
          ggplot2::geom_point(ggplot2::aes(x = proj.data,y=Y,color=origclass),
                              show.legend = FALSE)+
-           ggplot2::geom_vline(xintercept=cut.index.X,
-                      linetype="longdash",lwd=0.7,color="red")+
-           ggplot2::geom_hline(yintercept=cut.index.Y,
+         ggplot2::geom_vline(xintercept=cut.index.X,
+                             linetype="longdash",lwd=0.7,color="red")+
+         ggplot2::geom_hline(yintercept=cut.index.Y,
                              linetype="longdash",lwd=0.7,color="blue")
       p1.1<-ggExtra::ggMarginal(p1,type="density",groupColour=TRUE,groupFill = TRUE)
       vID <-1:p
       Vcoef<-Alpha[TS[node.id,4],]
-       coef_data<-data.frame(vID = factor(vID),Vcoef=Vcoef)
+      coef_data<-data.frame(vID = factor(vID),Vcoef=Vcoef)
       bin.width<-ifelse(p>100,1,0.1)
       y.max <-max(c(abs( coef_data$Vcoef),1/sqrt(p)))
       p2<-ggplot2::ggplot( coef_data,ggplot2::aes(x=vID,y=Vcoef))+
-          ggplot2::geom_segment(ggplot2::aes(yend=0,xend=vID,width=0.1))+
-          ggplot2::geom_hline(yintercept=0)+
-          ggplot2::geom_hline(yintercept=c(-1,1)*1/sqrt(ncol(origdata)),
-                     color="red",linetype="dashed")+
-          ggplot2::xlab("variable ID")+
-          ggplot2::ggtitle(paste("Node",node.id,sep=" "))+
-          ggplot2::ylim(-y.max,y.max)
+         ggplot2::geom_segment(ggplot2::aes(yend=0,xend=vID,width=0.1))+
+         ggplot2::geom_hline(yintercept=0)+
+         ggplot2::geom_hline(yintercept=c(-1,1)*1/sqrt(ncol(origdata)),
+                             color="red",linetype="dashed")+
+         ggplot2::xlab("variable ID")+
+         ggplot2::ggtitle(paste("Node",node.id,sep=" "))+
+         ggplot2::ylim(-y.max,y.max)
       gridExtra::grid.arrange(p2,p1.1,nrow=1)
    } else{
       sel.id<-which(predict.PPTreereg(PPTreeregOBJ,
-                            Rule=Rule,classinfo=TRUE,
-                            final.rule=1)$Yhat.class==
+                                      Rule=Rule,classinfo=TRUE,
+                                      final.rule=1)$Yhat.class==
                        gName[TS[node.id,3]])
 
       Yorig<-PPTreeregOBJ$origY
       proj.data<-rep(1,length(Yorig))
       proj.data<-c(as.matrix(origdata)%*%
-                     as.matrix(Alpha[TS[which((TS[,2]!=0&TS[,3]==node.id)|
-                                             TS[,2]==node.id),4],]))
+                      as.matrix(Alpha[TS[which((TS[,2]!=0&TS[,3]==node.id)|
+                                                  TS[,2]==node.id),4],]))
       plotT<-list()
       minY<-min(Yorig)
       maxY<-max(Yorig)
@@ -210,7 +210,7 @@ PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
          dplyr::group_by(predY, Yorig) %>%
          dplyr::summarise(count = dplyr::n()) %>%
          dplyr::mutate(predY.count = sum(predY),
-                prop = count/sum(count)) %>%
+                       prop = count/sum(count)) %>%
          dplyr::ungroup() %>%
          ggplot2::ggplot(ggplot2::aes(x = predY, y = prop, fill = Yorig)) +
          ggplot2::geom_bar(stat="identity", position = "fill", colour = "black",width = 1)+
@@ -220,27 +220,27 @@ PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
 
 
       for(i in 1:5){
-        predY<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=i)
-        pred.data<-predY[sel.id];Y=Yorig[sel.id]
-        plot.data3<-data.frame(pred.data,Y)
-        pred.data<-predY[-sel.id];Y=Yorig[-sel.id]
-        plot.data4<-data.frame(pred.data,Y)
-        n.class<-length(table(PPtreeOBJ$origclass))
-        plotT[[i]]<- ggplot2::ggplot()+
-                  ggplot2::geom_point(data=plot.data4,
-                             ggplot2::aes(y=pred.data,x=Y),
-                             color="grey80",size=1.3)+
-                  ggplot2::geom_point(data=plot.data3,
-                                      ggplot2::aes(y=pred.data,x=Y),size=1.3)+
-                  ggplot2::geom_vline(xintercept=PPTreeregOBJ$cut.class,
-                             col=4,linetype="dashed")+
-                  ggplot2::xlim(minY,maxY)+
-                  ggplot2::ylim(minY,maxY)+
-                  ggplot2::coord_fixed()+
-                  ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
-                  ggplot2::ylab("Fitted Y")+ggplot2::xlab("Observed Y")+
-                  ggplot2::ggtitle(paste("Node",node.id,": ","final rule=",i,
-                             sep=""))
+         predY<- predict.PPTreereg(PPTreeregOBJ,Rule=Rule,final.rule=i)
+         pred.data<-predY[sel.id];Y=Yorig[sel.id]
+         plot.data3<-data.frame(pred.data,Y)
+         pred.data<-predY[-sel.id];Y=Yorig[-sel.id]
+         plot.data4<-data.frame(pred.data,Y)
+         n.class<-length(table(PPtreeOBJ$origclass))
+         plotT[[i]]<- ggplot2::ggplot()+
+            ggplot2::geom_point(data=plot.data4,
+                                ggplot2::aes(y=pred.data,x=Y),
+                                color="grey80",size=1.3)+
+            ggplot2::geom_point(data=plot.data3,
+                                ggplot2::aes(y=pred.data,x=Y),size=1.3)+
+            ggplot2::geom_vline(xintercept=PPTreeregOBJ$cut.class,
+                                col=4,linetype="dashed")+
+            ggplot2::xlim(minY,maxY)+
+            ggplot2::ylim(minY,maxY)+
+            ggplot2::coord_fixed()+
+            ggplot2::geom_abline(intercept=0,slope=1,lwd=1,color="red")+
+            ggplot2::ylab("Fitted Y")+ggplot2::xlab("Observed Y")+
+            ggplot2::ggtitle(paste("Node",node.id,": ","final rule=",i,
+                                   sep=""))
       }
       p3<-ggplot2::ggplot()+
          ggplot2::theme_bw()+

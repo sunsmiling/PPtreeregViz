@@ -6,9 +6,8 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package was developed to visualize the Projection Pursuit
-Regression Tree model
-<a href="https://www.mdpi.com/2076-3417/11/21/9885/pdf"></a> and add
+This package was developed to visualize the [Projection Pursuit
+Regression Tree model](https://www.mdpi.com/2076-3417/11/21/9885/pdf)and add
 explanatory possibilities of the model using XAI (eXplainable AI)
 techniques. Since Pptreeregression is based on tree method and grows
 using projection of input features, the model has excellent
@@ -418,7 +417,7 @@ lime_explainer <- lime::lime(sample_train[,-14], PP_model)
 
 In order to check whether the created model works well, it is important
 to apply it to multiple instances. We implemented the Submodular Pick
-algorithm in \[‘LIME’\]<a href="https://arxiv.org/abs/1602.04938"></a> ,
+algorithm in [‘LIME’](https://arxiv.org/abs/1602.04938),
 which presented the methodology for which instance to choose. It was
 possible to extract 10 data from the data set whose final leaf is 1.
 

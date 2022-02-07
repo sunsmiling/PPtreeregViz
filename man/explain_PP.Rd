@@ -20,16 +20,3 @@ explain_PP(PPTreeregOBJ, data, y, final.rule,...)
 \description{
 explainer make for PPTreereg
 }
-\examples{
-\dontrun{library(DALEX)
-library(PPtreeRegViz)
-data(mtcars)
-PP_Tree <- PPtreeregViz::PPTreereg(mpg~.,data=mtcars)
-explainer_PPTreereg <- explain_PP(model = PP_Tree,
-data = mtcars[, -1], y = mtcars[,1], final.rule = 4)
-# model performance plot
-DALEX::model_performance(explainer_PPTreereg) \%>\% plot()
-#Break Down Profile
-DALEX::predict_parts(explainer_PPTreereg, new_observation =  mtcars[1,]) \%>\% plot()
-}
-}

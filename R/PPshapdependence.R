@@ -1,16 +1,14 @@
 #' Title
 #'
-#' @param data_long
-#' @param x
-#' @param y
-#' @param color_feature
-#' @param smooth
-#'
-#' @return
+#' @param data_long ppshapr_prep object
+#' @param x variable1
+#' @param y variable2
+#' @param color_feature display color
+#' @param smooth geom_smooth
 #' @export
 #'
-#' @examples
 PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE){
+  variable <- value <-  finalLeaf <- rfvalue  <- stdfvalue <- color_value <- NULL # due to NSE notes in R CMD check
   leafnum <- max(data_long$finalLeaf)
   yrange <- data_long[variable==x,range(value)]
 

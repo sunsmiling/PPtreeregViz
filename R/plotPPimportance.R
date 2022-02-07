@@ -6,11 +6,6 @@
 #' @param ... arguments to be passed to methods
 #' @export
 #' @keywords tree
-#' @examples
-#' data(mtcars)
-#' Tree.result <- PPTreereg(mpg~.,mtcars,DEPTH=2,PPmethod="LDA")
-#' PPimportanceObj <-  PPimportance(Tree.result)
-#' plot(PPimportanceObj)
 
 
 plot.PPimportance <- function(x, marginal = FALSE, num_var = 5,...){

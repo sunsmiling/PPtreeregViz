@@ -23,10 +23,6 @@
 #' @aliases predict
 #' @export
 #' @keywords tree
-#' @examples
-#' data(mtcars)
-#' Tree.result <- PPTreereg(mpg~.,mtcars,final.rule=1,DEPTH=2,PPmethod="LDA")
-#' predict(Tree.result)
 predict.PPTreereg<-function(object,newdata=NULL,Rule=1,final.rule=1,
                             classinfo=FALSE,...) {
 

@@ -21,15 +21,4 @@ Predict class for the test set and calculate prediction error
 After finding tree structure, predict class for the test set and calculate
 prediction error.
 }
-\examples{
-data(mtcars)
-n <- nrow(mtcars)
-tot <- c(1:n)
-n.train <- round(n*0.8)
-train <- sample(tot,n.train)
-test <- tot[-train]
-Tree.result <- PPTreereg(mpg~.,mtcars[train,],
-                           final.rule=1,DEPTH=2)
-PPregcoeff(Tree.result,c(1:3))
-}
 \keyword{tree}

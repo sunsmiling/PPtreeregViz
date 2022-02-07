@@ -21,15 +21,4 @@ imp_var MSE of the predicted values
 \description{
 Calculate importance
 }
-\examples{
-data(mtcars)
-n <- nrow(mtcars)
-tot <- c(1:n)
-n.train <- round(n*0.8)
-train <- sample(tot,n.train)
-test <- tot[-train]
-Tree.result <- PPTreereg(mpg~.,mtcars[train,],
-                           final.rule=1,DEPTH=2)
-PPimportance(Tree.result)
-}
 \keyword{tree}

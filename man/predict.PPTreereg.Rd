@@ -45,9 +45,4 @@ Predict class for the test set and calculate prediction error
 After finding tree structure, predict class for the test set and calculate
 prediction error.
 }
-\examples{
-data(mtcars)
-Tree.result <- PPTreereg(mpg~.,mtcars,final.rule=1,DEPTH=2,PPmethod="LDA")
-predict(Tree.result)
-}
 \keyword{tree}

@@ -1,15 +1,18 @@
 #' Title
 #'
-#' @param PPTreeshapObj
-#' @param final.rule
-#' @param method
-#'
-#' @return
+#' @param PPTreeshapObj PPTreereg object
+#' @param final.rule final.rule
+#' @param method simple or empirical
 #' @export
 #'
 ppshapr_prep = function(PPTreeshapObj = NULL,
                         final.rule =5,
                         method="empirical"){
+
+
+  id <- value <-  mean_value <- rfvalue  <- stdfvalue <- variable<- NULL # due to NSE notes in R CMD check
+
+
   trainNum = nrow(PPTreeshapObj$Tree.result$origdata)
   leafnum = length(PPTreeshapObj$mean.G)
   scale_ft <- function(x){

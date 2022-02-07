@@ -21,11 +21,4 @@ PPregVarViz(PPTreeregOBJ,var.id,indiv=FALSE,
 \description{
 Explore PPtree with different Rules in each split.
 }
-\examples{
-data(mtcars)
-Tree.result <- PPTreereg(mpg~.,mtcars,final.rule=1,DEPTH=2)
-plot(Tree.result)
-PPregVarViz(Tree.result,1,1)
-
-}
 \keyword{tree}

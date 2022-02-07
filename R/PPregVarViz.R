@@ -11,12 +11,6 @@
 #' @export
 #' @import PPtreeViz
 #' @keywords tree
-#' @examples
-#' data(mtcars)
-#' Tree.result <- PPTreereg(mpg~.,mtcars,final.rule=1,DEPTH=2)
-#' plot(Tree.result)
-#' PPregVarViz(Tree.result,1,1)
-#'
 PPregVarViz<-function(PPTreeregOBJ,var.id,indiv=FALSE,
                       DEPTH=NULL,smoothMethod="auto"){
 

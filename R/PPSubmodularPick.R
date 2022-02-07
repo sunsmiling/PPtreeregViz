@@ -8,13 +8,6 @@
 #' @param obsnum default 1
 #' @param ... arguments to be passed to methods
 #' @export
-#' @examples
-#' \dontrun{modelPP <- caret::train(mpg~.,data =mtcars,
-#' method = PPTreereg.M1 ,
-#' DEPTH=2,PPmethod="LDA")
-#' explainer_PP <- lime::lime(mtcars[,-1], modelPP)
-#' SubPick_PPTreereg(PP_Tree, explainer_PP, "class1", 3)
-#' }
 #' @keywords submodular
 
 SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,... ){

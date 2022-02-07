@@ -1,12 +1,12 @@
 #' Title
 #'
-#' @param data_long
-#' @param ...
-#'
-#' @return
+#' @param data_long ppshapr_prep object
+#' @param ... arguments to be passed to methods
 #' @export
 #'
-PPshapsummary <- function(data_long, finalLeaf =5,...){
+PPshapsummary <- function(data_long,...){
+  value <- variable<- stdfvalue <- finalLeaf <- NULL # due to NSE notes in R CMD check
+
   leafnum <- max(data_long$finalLeaf)
   plotT <-list()
 

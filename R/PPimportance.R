@@ -1,6 +1,6 @@
 #' PPimportance PPTreereg
-#' 
-#' Calculate importance 
+#'
+#' Calculate importance
 #' @usage PPimportance(PPTreeregOBJ,...)
 #' @param PPTreeregOBJ PPTreereg object
 #' @param ... arguments to be passed to methods
@@ -9,16 +9,6 @@
 #' @return imp_var MSE of the predicted values
 #' @export
 #' @keywords tree
-#' @examples
-#' data(mtcars)
-#' n <- nrow(mtcars)
-#' tot <- c(1:n)
-#' n.train <- round(n*0.8)
-#' train <- sample(tot,n.train)
-#' test <- tot[-train]
-#' Tree.result <- PPTreereg(mpg~.,mtcars[train,],
-#'                            final.rule=1,DEPTH=2)
-#' PPimportance(Tree.result)
 
 PPimportance<-function(PPTreeregOBJ,...){
   PPtreeOBJ<-PPTreeregOBJ$Tree.result
@@ -45,7 +35,7 @@ PPimportance<-function(PPTreeregOBJ,...){
     }
     var.keep<-var.keep/length(node.id.keep)
     node.final<-cbind(node.final,var.keep)
-  }  
+  }
   p<-ncol(proj.best)
   node.final<-round(node.final*p,3)
   colnames(node.final)<-paste("class",1:n.class)
@@ -57,12 +47,12 @@ PPimportance<-function(PPTreeregOBJ,...){
   node.varImp<-apply(proj.best,2,
               function(x) sum(abs(x)*node.split$node.n)/sum(node.split$node.n)*100)
   node.varImp<-round(node.varImp*p,3)
- 
-  
+
+
   PPimpobj<-list(imp_node_split=node.split,
                         imp_node_final=node.final,
                         imp_var=node.varImp)
-  class(PPimpobj)<-"PPimportance" 
+  class(PPimpobj)<-"PPimportance"
   return(PPimpobj)
-  
+
 }

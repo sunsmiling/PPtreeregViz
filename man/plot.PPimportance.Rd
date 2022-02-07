@@ -18,10 +18,4 @@
 \description{
 Plot Importance of trained Tree
 }
-\examples{
-data(mtcars)
-Tree.result <- PPTreereg(mpg~.,mtcars,DEPTH=2,PPmethod="LDA")
-PPimportanceObj <-  PPimportance(Tree.result)
-plot(PPimportanceObj)
-}
 \keyword{tree}

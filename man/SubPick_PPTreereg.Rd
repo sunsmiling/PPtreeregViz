@@ -23,12 +23,4 @@ Pick obs according to class range
 \details{
 Pick obs according to class range
 }
-\examples{
-\dontrun{modelPP <- caret::train(mpg~.,data =mtcars,
-method = PPTreereg.M1 ,
-DEPTH=2,PPmethod="LDA")
-explainer_PP <- lime::lime(mtcars[,-1], modelPP)
-SubPick_PPTreereg(PP_Tree, explainer_PP, "class1", 3)
-}
-}
 \keyword{submodular}

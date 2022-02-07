@@ -10,16 +10,6 @@
 #' @return coef_result coefficients of nodes
 #' @export
 #' @keywords tree
-#' @examples
-#' data(mtcars)
-#' n <- nrow(mtcars)
-#' tot <- c(1:n)
-#' n.train <- round(n*0.8)
-#' train <- sample(tot,n.train)
-#' test <- tot[-train]
-#' Tree.result <- PPTreereg(mpg~.,mtcars[train,],
-#'                            final.rule=1,DEPTH=2)
-#' PPregcoeff(Tree.result,c(1:3))
 PPregcoeff<-function(PPTreeregOBJ,c,...){
   PPclassOBJ <-PPTreeregOBJ$Tree.result
   TS <- PPclassOBJ$Tree.Struct

@@ -352,12 +352,12 @@ new_explainer <- explain_PP(PPTreeregOBJ = Model, data = sample_train[,-14],
 #>   -> data              :  354  rows  13  cols 
 #>   -> target variable   :  354  values 
 #>   -> predict function  :  function(m, x) as.numeric(predict.PPTreereg(m, x, final.rule = final.rule)) 
-#>   -> predicted values  :  No value for predict function target column. ( [33m default [39m )
-#>   -> model_info        :  package Model of class: PPTreereg package unrecognized , ver. Unknown , task regression ( [33m default [39m ) 
+#>   -> predicted values  :  No value for predict function target column. ( [33m default [39m )
+#>   -> model_info        :  package Model of class: PPTreereg package unrecognized , ver. Unknown , task regression ( [33m default [39m ) 
 #>   -> predicted values  :  numerical, min =  6.23836 , mean =  22.16265 , max =  50.86801  
-#>   -> residual function :  difference between y and yhat ( [33m default [39m )
+#>   -> residual function :  difference between y and yhat ( [33m default [39m )
 #>   -> residuals         :  numerical, min =  -22.9165 , mean =  0.2167251 , max =  29.68961  
-#>  [32m A new explainer has been created! [39m
+#>  [32m A new explainer has been created! [39m
 ```
 
 ``` r

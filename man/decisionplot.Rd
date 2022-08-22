@@ -2,14 +2,16 @@
 % Please edit documentation in R/waterfall_decision.R
 \name{decisionplot}
 \alias{decisionplot}
-\title{decisionplot}
+\title{decisionplot_new}
 \usage{
 decisionplot(
   PPTreeregOBJ,
   testObs,
   final.rule = 5,
   method = "simple",
-  varImp = "shapImp"
+  varImp = "shapImp",
+  final.leaf = NULL,
+  Yrange = FALSE
 )
 }
 \arguments{
@@ -22,7 +24,11 @@ decisionplot(
 \item{method}{method}
 
 \item{varImp}{shapImp or treeimp}
+
+\item{final.leaf}{final.leaf}
+
+\item{Yrange}{Yrange}
 }
 \description{
-decisionplot
+decisionplot_new
 }

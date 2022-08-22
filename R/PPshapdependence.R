@@ -20,7 +20,8 @@ PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE
     data0 <- data_long_leaf[variable== y, .(variable, value,rfvalue)]
     if (!is.null(color_feature)) {
       data0$color_value <- data_long_leaf[variable == color_feature, stdfvalue]
-      scale_lim <- range(data0$color_value)
+      scale_lim <- range(data_long[variable == color_feature, stdfvalue])
+      #scale_lim <- range(data0$color_value)
     }else{
       scale_lim <- NULL
     }
@@ -32,6 +33,7 @@ PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE
     ) +
       ggplot2::geom_jitter(alpha = 0.5) +
       ggplot2:: scale_colour_gradient2(
+        limits = scale_lim,
         low = "blue",
         mid = "yellow",
         high = "red",
@@ -40,13 +42,16 @@ PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE
       )+
       #ggplot2::scale_color_gradient(low = "#FFCC33",high = "#6600CC",breaks=scale_lim, labels=c("Low","High"))+
       ggplot2::labs(title = paste0("finalLeaf : ",i),
-                    y = paste0("SHAP value for ", x),
+                    y = paste0("SHAP values for ", x),
                     x = x,
                     color = if (!is.null(color_feature))
-                      paste0(color_feature, "\n","(Feature value)") else NULL)+
+                      paste0("(Feature","\n","value):", "\n", color_feature) else NULL)+
       ggplot2::ylim(yrange)+
       ggplot2::theme_bw()+
-      ggplot2::geom_hline(yintercept = 0)
+      ggplot2::geom_hline(yintercept = 0)+
+      ggplot2::guides(color = ggplot2::guide_colorbar(
+        barheight = grid::unit(1, "npc") - grid::unit(0.3, "npc"),
+        ticks.linewidth = 0))
 
   }
   if(smooth) {
@@ -62,12 +67,15 @@ PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE
       plotT[[k]] = plotT[[k]]+ ggplot2::theme(legend.position="none")
     }
     grided <- gridExtra::arrangeGrob(grobs= plotT, ncol=2)
-    gg <- gridExtra::grid.arrange(grided,legend,
+    gg <- gridExtra::grid.arrange(grided,
+                                  legend,
                                   widths=grid::unit.c(grid::unit(1, "npc") - grid::unit(2, "lines") - legend$width,
                                                       legend$width),
+                                  heights = legend$height,
                                   top = grid::textGrob("Dependence plot", gp = grid::gpar(cex = 1.3)),
                                   nrow=1)
   }else{
     gg <- gridExtra::grid.arrange(grobs= plotT, ncol=2)
   }
 }
+

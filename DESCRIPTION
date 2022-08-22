@@ -1,8 +1,8 @@
 Package: PPtreeregViz
 Type: Package
 Title: Visualize Projection Pursuit Regression Tree 
-Version: 0.1.1
-Date: 2022-02-07
+Version: 1.0.1
+Date: 2022-08-22
 Author: c(
     person("Eun-Kyung", "Lee", email = "lee.eunk@gmail.com", role = "cre"),
     person("Hyun Sun", "Cho", email = "sunsmiling@naver.com", role = "aut"))
@@ -13,7 +13,7 @@ Description: Construct Projection Pursuit Regression Trees and visual data inves
  summary plot, dependence plot, interaction plot, and decision plot and relies on
  the SHAP implementation provided by PPTreereg.
 License: GPL-3
-Imports: Rcpp (>= 1.0.5),MASS (>= 3.1-20),data.table, shapr, ggplot2, dplyr,tidyr,tibble,PPtreeViz,reshape2,magrittr,utils,
+Imports: Rcpp (>= 1.0.5),data.table, shapr, ggplot2, dplyr,tidyr,tibble,PPtreeViz,reshape2,magrittr,utils,
 Suggests: 
     testthat (>= 3.0.0),
     gridExtra,
@@ -22,7 +22,6 @@ Suggests:
     partykit,
     ggparty,
     progress,
-    gtools,
     tidyselect,
     DALEX,
     lime,
@@ -35,7 +34,7 @@ Suggests:
     gtable,
     rmarkdown
 LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Encoding: UTF-8
 Depends: 
     R (>= 3.5)

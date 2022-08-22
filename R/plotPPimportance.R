@@ -27,6 +27,7 @@ plot.PPimportance <- function(x, marginal = FALSE, num_var = 5,...){
       ggplot2::scale_fill_gradient2(low = "red3", high = "dodgerblue3") +
       ggplot2::facet_wrap(Class~., scales = "free") +
       ggplot2::theme_bw()+
+      ggplot2::xlab("")+
       ggplot2::coord_flip()+
       ggplot2::scale_x_continuous(
         breaks = pd$order,
@@ -52,3 +53,4 @@ plot.PPimportance <- function(x, marginal = FALSE, num_var = 5,...){
   }
   p
 }
+

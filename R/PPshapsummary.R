@@ -10,9 +10,10 @@ PPshapsummary <- function(data_long,...){
   leafnum <- max(data_long$finalLeaf)
   plotT <-list()
 
+  scale_lim <- c(min(data_long$stdfvalue),max(data_long$stdfvalue))
   for(i in 1:leafnum){
     data_long_leaf <- data_long[variable!="none" & finalLeaf==i]
-    scale_lim <- c(min(data_long_leaf$stdfvalue),max(data_long_leaf$stdfvalue))
+    #scale_lim <- c(min(data_long_leaf$stdfvalue),max(data_long_leaf$stdfvalue))
     plotT[[i]] <- data_long_leaf %>%
       dplyr::mutate(variable = forcats::fct_reorder(variable, value, .fun = "var"))%>%
       ggplot2::ggplot(ggplot2::aes(x=variable, y=value, color= stdfvalue)) +
@@ -20,15 +21,16 @@ PPshapsummary <- function(data_long,...){
       ggplot2::geom_boxplot(alpha=0.25,width=0.3,color="grey")+
       ggforce::geom_sina(shape = 16, size=2, alpha = .5,maxwidth = 0.7,method = "counts") +
       ggplot2:: scale_colour_gradient2(
+        limits = scale_lim,
         low = "blue",
         mid = "yellow",
-        high ="red",
-        midpoint = mean(scale_lim),
+        high = "red",
+        midpoint = 0.5,
         breaks=scale_lim, labels=c("Low","High")
       )+
       #ggplot2::scale_color_gradient(low = "#FFCC33",high = "#6600CC",breaks=scale_lim, labels=c("Low","High"))+
       ggplot2::guides(color = ggplot2::guide_colorbar(
-        barheight = grid::unit(1, "npc") - grid::unit(4, "line"),
+        barheight = grid::unit(1, "npc") - grid::unit(0.3, "npc"),
         ticks.linewidth = 0))+
       ggplot2::xlab(NULL)+
       ggplot2::theme_bw()+
@@ -36,9 +38,8 @@ PPshapsummary <- function(data_long,...){
                      axis.ticks.y = ggplot2::element_blank(),
                      legend.position="right") +
       ggplot2::geom_hline(yintercept = 0)+
-
       ggplot2::labs(title= paste0("final leaf : ",i),
-                    y = "SHAP value (impact on model output)", x = "", color = "Feature\nvalue")
+                    y = "PPkernelSHAP value", x = "", color = "Feature\nvalue")
   }
   legend = gtable::gtable_filter(ggplot2::ggplotGrob(plotT[[1]]), "guide-box")
   for(k in 1:leafnum){
@@ -54,3 +55,4 @@ PPshapsummary <- function(data_long,...){
                                 nrow=1)
 
 }
+

@@ -4,7 +4,7 @@
 \alias{ppshapr_prep}
 \title{Title}
 \usage{
-ppshapr_prep(PPTreeshapObj = NULL, final.rule = 5, method = "empirical")
+ppshapr_prep(PPTreeshapObj = NULL, final.rule = 5, method = "simple")
 }
 \arguments{
 \item{PPTreeshapObj}{PPTreereg object}

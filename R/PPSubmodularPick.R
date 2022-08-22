@@ -105,9 +105,6 @@ SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,..
   }
 
 
-
-
-
   x <- PPTreeregOBJ
   intClass <- as.integer(substring(chooseClass,6))
   if(sum(x$Tree.result$origclass==intClass &
@@ -128,5 +125,6 @@ SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,..
                            num_features = 20)$sample_ind
     obs_name <- row.names(df[pick,])
   }
-  obs_name
+  result <- list(df = df[pick,], obs= obs_name)
+  return(result)
 }

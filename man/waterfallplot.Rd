@@ -4,7 +4,13 @@
 \alias{waterfallplot}
 \title{waterfallplot}
 \usage{
-waterfallplot(PPTreeregOBJ, testObs, final.rule = 5, method = "simple")
+waterfallplot(
+  PPTreeregOBJ,
+  testObs,
+  final.rule = 5,
+  method = "simple",
+  final.leaf = NULL
+)
 }
 \arguments{
 \item{PPTreeregOBJ}{PPTreereg object}
@@ -14,6 +20,8 @@ waterfallplot(PPTreeregOBJ, testObs, final.rule = 5, method = "simple")
 \item{final.rule}{final.rule}
 
 \item{method}{simple or empirical}
+
+\item{final.leaf}{final leaf}
 }
 \description{
 waterfallplot

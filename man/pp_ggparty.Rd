@@ -4,12 +4,25 @@
 \alias{pp_ggparty}
 \title{Plot using ggparty}
 \usage{
-pp_ggparty(PPTreeregOBJ,ind_variable,...)
+pp_ggparty(PPTreeregOBJ,ind_variable,final.rule=5,Rule=1, ...)
 }
 \arguments{
 \item{PPTreeregOBJ}{PPTreereg object}
 
 \item{ind_variable}{independent varible to show}
+
+\item{final.rule}{final.rule}
+
+\item{Rule}{split rule
+1: mean of two group means
+2: weighted mean of two group means - weight with group size
+3: weighted mean of two group means - weight with group sd
+4: weighted mean of two group means - weight with group se
+5: mean of two group medians
+6: weighted mean of two group medians - weight with group size
+7: weighted mean of two group median - weight with group IQR
+8: weighted mean of two group median - weight with group IQR
+                                       and group size}
 
 \item{...}{arguments to be passed to methods}
 }

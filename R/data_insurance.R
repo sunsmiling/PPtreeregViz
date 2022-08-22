@@ -16,7 +16,7 @@
 #' }
 #'
 #'
-#' Source: \url{https://www.https://www.kaggle.com/mirichoi0218/insurance}
+#' Source: \url{https://www.kaggle.com/mirichoi0218/insurance}
 #'
 #' @docType data
 #' @keywords insurance

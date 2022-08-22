@@ -33,6 +33,6 @@ objective index of body weight (kg / m ^ 2) using the ratio of height to weight,
 }
 
 
-Source: \url{https://www.https://www.kaggle.com/mirichoi0218/insurance}
+Source: \url{https://www.kaggle.com/mirichoi0218/insurance}
 }
 \keyword{insurance}

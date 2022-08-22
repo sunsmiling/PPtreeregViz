@@ -7,7 +7,7 @@
 #'
 ppshapr_prep = function(PPTreeshapObj = NULL,
                         final.rule =5,
-                        method="empirical"){
+                        method="simple"){
 
 
   id <- value <-  mean_value <- rfvalue  <- stdfvalue <- variable<- NULL # due to NSE notes in R CMD check

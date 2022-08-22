@@ -4,7 +4,7 @@
 \alias{ppshapr.simple}
 \title{Calculate shap values with simple methods}
 \usage{
-ppshapr.simple(PPTreeregOBJ, testObs, final.rule)
+ppshapr.simple(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
 }
 \arguments{
 \item{PPTreeregOBJ}{PPTreereg object}
@@ -12,6 +12,8 @@ ppshapr.simple(PPTreeregOBJ, testObs, final.rule)
 \item{testObs}{testObs}
 
 \item{final.rule}{rule to calculate the final node value}
+
+\item{final.leaf}{final leaf}
 }
 \description{
 Calculate shap values with simple methods

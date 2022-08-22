@@ -6,8 +6,9 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-This package was developed to visualize the [Projection Pursuit
-Regression Tree model](https://www.mdpi.com/2076-3417/11/21/9885/pdf)and add
+This package was developed to visualize the Projection Pursuit
+Regression Tree model
+<a href="https://www.mdpi.com/2076-3417/11/21/9885/pdf"></a> and add
 explanatory possibilities of the model using XAI (eXplainable AI)
 techniques. Since Pptreeregression is based on tree method and grows
 using projection of input features, the model has excellent
@@ -49,7 +50,7 @@ will see an example of explaining model by applying XAI techniques.
 
 The Boston data were divided into a train data set and a test data set
 at a ratio of 7:3. In particular, the first observation in the test data
-set was specifically selected as “sample\_one”.
+set was specifically selected as “sample_one”.
 
 ``` r
 data("Boston")
@@ -87,12 +88,23 @@ population (percent)) had a wide range from 10 to 30, but in the group
 with the top 25%, lstat had only values less than 15.
 
 ``` r
-pp_ggparty(Model, "lstat")
+pp_ggparty(Model, "lstat", final.rule = 1)
 ```
 
 <img src="man/figures/README-unnamed-chunk-5-1.png" width="80%" />
 
-### variable importance plot
+``` r
+pp_ggparty(Model, "lstat", final.rule = 4)
+```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="80%" />
+
+``` r
+pp_ggparty(Model, "lstat", final.rule = 5)
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" /> \###
+variable importance plot
 
 By using the combination of the regression coefficient values of the
 projection values at each split node, the importance of the variables
@@ -110,19 +122,19 @@ Tree.Imp <- PPimportance(Model)
 plot(Tree.Imp)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="80%" />
 
 If you use some arguments such as `marginal = TRUE` and `num_var`, you
 can see the desired number of marginal variable importance of the whole
 rather than each final leaf.
 
 ``` r
-plot(Tree.Imp, marginal = TRUE, num_var =10)
+plot(Tree.Imp, marginal = TRUE, num_var = 5)
 #> Warning: `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> =
 #> "none")` instead.
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="80%" />
 
 ### Node visualization
 
@@ -133,11 +145,17 @@ choose the final.rule from 1 to 5, whether to use a single value or a
 linear combination of independent variables.
 
 ``` r
+PPregNodeViz(Model, node.id = 1)
+```
+
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="80%" />
+
+``` r
 PPregNodeViz(Model, node.id = 4)
 #> Warning: Removed 2 rows containing missing values (geom_point).
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="80%" />
 
 4th final leaf’s node id is 7.
 
@@ -146,7 +164,7 @@ PPregNodeViz(Model,node.id = 7)
 #> Warning: Removed 2 rows containing missing values (geom_point).
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="80%" />
 
 ### Variable visualization
 
@@ -160,14 +178,14 @@ PPregVarViz(Model,"lstat")
 #> `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="80%" />
 
 ``` r
 PPregVarViz(Model,"lstat",indiv = TRUE)
 #> `geom_smooth()` using method = 'loess' and formula 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-14-1.png" width="80%" />
 
 ## Using XAI method
 
@@ -193,40 +211,12 @@ which is an estimate of this value, was used.
 
 ``` r
 ppshapr.simple(PPTreeregOBJ = Model, testObs = sample_one, final.rule = 5)$dt
-#>        none          crim           zn        indus        chas           nox
-#> 1: 12.46848  0.7838335289  0.001684010 -0.733734037 -0.01669062  2.3142569885
-#> 2: 19.54138 -0.0002032424  0.003705198 -0.083005940 -0.01742891  0.2282122472
-#> 3: 23.25114 -0.0083690247 -0.007357408  0.009685125 -0.00178154 -0.0002517925
-#> 4: 34.19573 -0.0415723090 -0.044531442  0.026923877 -0.01139638 -0.0134401206
-#>              rm        age         dis          rad         tax     ptratio
-#> 1:  0.124716454 1.34568537 -0.50696591 -1.183759289 3.077606011 0.993410595
-#> 2:  0.055902934 1.11464538  0.07841954 -0.234651311 0.279177987 1.736859421
-#> 3: -0.008369025 0.06894799  0.04018246 -0.006113893 0.009685125 0.009685125
-#> 4: -9.866244745 0.05047266  0.07727056 -0.013440121 0.012083990 0.061449429
+#>        none         crim           zn       indus        chas           nox
+#> 1: 23.25114 -0.008369025 -0.007357408 0.009685125 -0.00178154 -0.0002517925
+#>              rm        age        dis          rad         tax     ptratio
+#> 1: -0.008369025 0.06894799 0.04018246 -0.006113893 0.009685125 0.009685125
 #>           black       lstat finalLeaf
-#> 1:  0.282569022  4.35289424         1
-#> 2:  0.036585933  0.56438612         2
-#> 3: -0.003396076 -0.04969885         3
-#> 4: -0.011396379 -1.11792062         4
-```
-
-``` r
-ppshapr.empirical(PPTreeregOBJ = Model, testObs = sample_one, final.rule = 5)$dt
-#>        none        crim          zn       indus         chas        nox
-#> 1: 12.46848  0.70598804  0.05134841 -0.48244970  0.028332351  1.9731431
-#> 2: 19.54138  0.07335922  0.01301654 -0.25701974 -0.001394035  0.5346207
-#> 3: 23.25114 -0.06748363 -0.09682826  0.03388506 -0.067120448  0.2310434
-#> 4: 34.19573 -0.16092858 -0.37953516  0.02956184 -0.137499174 -0.1764362
-#>              rm       age         dis        rad        tax    ptratio
-#> 1: -0.192990544 1.6641676 -0.47321420 -1.0259736 2.71050320 1.34398798
-#> 2: -0.001678012 0.9449225  0.03966263 -0.3313808 0.63578823 1.19882833
-#> 3: -1.096227037 0.2941005  0.47075727 -0.1861107 0.33425956 0.46395919
-#> 4: -8.597364384 0.1107112  0.36046941 -0.2513323 0.08846441 0.07038062
-#>          black      lstat finalLeaf
-#> 1:  0.36219617  4.1704674         1
-#> 2:  0.03846358  0.8754161         2
-#> 3: -0.02280366 -0.2385830         3
-#> 4: -0.12394040 -1.7242926         4
+#> 1: -0.003396076 -0.04969885         3
 ```
 
 Although the difference in calculation speed between ppshapr.simple and
@@ -246,17 +236,16 @@ final leaf). How each feature affects yhat in one observation can be
 drawn in two ways. `decisionplot` and `waterfallplot`.
 
 ``` r
-decisionplot(Model, testObs = sample_one, method="simple",varImp = "shapImp")
-#> Warning in xtfrm.data.frame(x): cannot xtfrm data frames
+decisionplot(Model, testObs = sample_one, method="simple",varImp = "shapImp",final.rule=5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-15-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="80%" />
 
 ``` r
-waterfallplot(Model, testObs = sample_one, method="simple")
+waterfallplot(Model, testObs = sample_one, method="simple", final.rule=4)
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-18-1.png" width="80%" />
 
 ### Summary & Dependence plot
 
@@ -266,7 +255,7 @@ computationally expensive, so it is calculated at once using
 `ppshapr_prep`.
 
 ``` r
-shap_long <- ppshapr_prep(Model, method = "simple") #takes about 4 minutes
+shap_long <- ppshapr_prep(Model, final.rule = 5, method = "simple") #takes about 4 minutes
 ```
 
 The summary plot visualizes how the overall features of the training
@@ -281,7 +270,7 @@ and tax had a great influence in determining the house price in common.
 PPshapsummary(data_long = shap_long)
 ```
 
-<img src="man/figures/README-unnamed-chunk-18-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
 
 Through the dependency plot, for each final leaf, the effect of the
 number of rooms on the house price can be seen. When the number of rooms
@@ -296,12 +285,11 @@ effect on the house price.
 
 ``` r
 PPshapdependence(shap_long,x = "rm")
-#> Warning: Removed 3 rows containing missing values (geom_smooth).
-#> Warning: Removed 1 rows containing missing values (geom_smooth).
 #> Warning: Removed 1 rows containing missing values (geom_point).
+#> Warning: Removed 4 rows containing missing values (geom_smooth).
 ```
 
-<img src="man/figures/README-unnamed-chunk-19-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-21-1.png" width="80%" />
 
 You can add color to see how it relates to other feature. As a result of
 specifying lstat as a color, it can be seen that the lower the lstat and
@@ -309,22 +297,20 @@ the larger the number of rooms, SHAP values increase.
 
 ``` r
 PPshapdependence(shap_long,x = "rm", color_feature = "lstat")
-#> Warning: Removed 3 rows containing missing values (geom_smooth).
-#> Warning: Removed 1 rows containing missing values (geom_smooth).
+#> Warning: Removed 4 rows containing missing values (geom_smooth).
 ```
 
-<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="80%" />
 
 Next, as a result of examining crim and age, the higher crim contributed
 to the lower house price.
 
 ``` r
 PPshapdependence(shap_long,x = "crim", color_feature = "age")
-#> Warning: Removed 4 rows containing missing values (geom_smooth).
 #> Warning: Removed 1 rows containing missing values (geom_point).
 ```
 
-<img src="man/figures/README-unnamed-chunk-21-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-23-1.png" width="80%" />
 
 ### Collaboration with other packages
 
@@ -338,7 +324,7 @@ functions in the DALEX package.
 
 ``` r
 library("DALEX")
-#> Welcome to DALEX (version: 2.3.0).
+#> Welcome to DALEX (version: 2.4.2).
 #> Find examples and detailed introduction at: http://ema.drwhy.ai/
 #> 
 #> 다음의 패키지를 부착합니다: 'DALEX'
@@ -352,12 +338,12 @@ new_explainer <- explain_PP(PPTreeregOBJ = Model, data = sample_train[,-14],
 #>   -> data              :  354  rows  13  cols 
 #>   -> target variable   :  354  values 
 #>   -> predict function  :  function(m, x) as.numeric(predict.PPTreereg(m, x, final.rule = final.rule)) 
-#>   -> predicted values  :  No value for predict function target column. ( [33m default [39m )
-#>   -> model_info        :  package Model of class: PPTreereg package unrecognized , ver. Unknown , task regression ( [33m default [39m ) 
+#>   -> predicted values  :  No value for predict function target column. (  default  )
+#>   -> model_info        :  package Model of class: PPTreereg package unrecognized , ver. Unknown , task regression (  default  ) 
 #>   -> predicted values  :  numerical, min =  6.23836 , mean =  22.16265 , max =  50.86801  
-#>   -> residual function :  difference between y and yhat ( [33m default [39m )
+#>   -> residual function :  difference between y and yhat (  default  )
 #>   -> residuals         :  numerical, min =  -22.9165 , mean =  0.2167251 , max =  29.68961  
-#>  [32m A new explainer has been created! [39m
+#>   A new explainer has been created!
 ```
 
 ``` r
@@ -379,26 +365,26 @@ DALEX::model_performance(new_explainer)
 DALEX::model_performance(new_explainer) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-24-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-26-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-27-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>%
   plot(geom="profiles")
 ```
 
-<img src="man/figures/README-unnamed-chunk-26-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
 
 ``` r
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-27-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
 
 #### lime package
 
@@ -407,7 +393,6 @@ PP_model <- caret::train(medv ~., data = sample_train,
                          method = PPTreereg.M1 ,
                          DEPTH=2,
                          PPmethod="LDA")
-#> Warning: 패키지 'caret'는 R 버전 4.1.1에서 작성되었습니다
 #> 필요한 패키지를 로딩중입니다: lattice
 
 lime_explainer <- lime::lime(sample_train[,-14], PP_model)
@@ -417,7 +402,7 @@ lime_explainer <- lime::lime(sample_train[,-14], PP_model)
 
 In order to check whether the created model works well, it is important
 to apply it to multiple instances. We implemented the Submodular Pick
-algorithm in [‘LIME’](https://arxiv.org/abs/1602.04938),
+algorithm in \[‘LIME’\]<a href="https://arxiv.org/abs/1602.04938"></a> ,
 which presented the methodology for which instance to choose. It was
 possible to extract 10 data from the data set whose final leaf is 1.
 
@@ -426,5 +411,36 @@ possible to extract 10 data from the data set whose final leaf is 1.
 ``` r
 class1s_obs <- SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 10) 
 class1s_obs 
+#> $df
+#>         crim zn indus chas   nox    rm   age    dis rad tax ptratio  black
+#> 415 45.74610  0  18.1    0 0.693 4.519 100.0 1.6582  24 666    20.2  88.27
+#> 381 88.97620  0  18.1    0 0.671 6.968  91.9 1.4165  24 666    20.2 396.90
+#> 390  8.15174  0  18.1    0 0.700 5.390  98.9 1.7281  24 666    20.2 396.90
+#> 393 11.57790  0  18.1    0 0.700 5.036  97.0 1.7700  24 666    20.2 396.90
+#> 455  9.51363  0  18.1    0 0.713 6.728  94.1 2.4961  24 666    20.2   6.68
+#> 440  9.39063  0  18.1    0 0.740 5.627  93.9 1.8172  24 666    20.2 396.90
+#> 406 67.92080  0  18.1    0 0.693 5.683 100.0 1.4254  24 666    20.2 384.97
+#> 452  5.44114  0  18.1    0 0.713 6.655  98.2 2.3552  24 666    20.2 355.29
+#> 432 10.06230  0  18.1    0 0.584 6.833  94.3 2.0882  24 666    20.2  81.33
+#> 426 15.86030  0  18.1    0 0.679 5.896  95.4 1.9096  24 666    20.2   7.68
+#>     lstat
+#> 415 36.98
+#> 381 17.21
+#> 390 20.85
+#> 393 25.68
+#> 455 18.71
+#> 440 22.88
+#> 406 22.98
+#> 452 17.73
+#> 432 19.69
+#> 426 24.39
+#> 
+#> $obs
 #>  [1] "415" "381" "390" "393" "455" "440" "406" "452" "432" "426"
 ```
+
+``` r
+decisionplot(Model, testObs = class1s_obs$df , method="simple",varImp = "shapImp",final.rule=5)
+```
+
+<img src="man/figures/README-unnamed-chunk-32-1.png" width="80%" />

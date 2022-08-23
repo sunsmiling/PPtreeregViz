@@ -186,6 +186,7 @@ PPregVarViz(Model,"lstat",indiv = TRUE)
 ```
 
 <img src="man/figures/README-unnamed-chunk-14-1.png" width="80%" />
+<<<<<<< HEAD
 
 ``` r
 PPregVarViz(Model,"chas",var.factor = TRUE)

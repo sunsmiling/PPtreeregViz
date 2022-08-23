@@ -187,6 +187,18 @@ PPregVarViz(Model,"lstat",indiv = TRUE)
 
 <img src="man/figures/README-unnamed-chunk-14-1.png" width="80%" />
 
+``` r
+PPregVarViz(Model,"chas",var.factor = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-15-1.png" width="80%" />
+
+``` r
+PPregVarViz(Model,"chas",indiv = TRUE, var.factor = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="80%" />
+
 ## Using XAI method
 
 ### Calculate SHAP for PPTreereg method
@@ -239,13 +251,13 @@ drawn in two ways. `decisionplot` and `waterfallplot`.
 decisionplot(Model, testObs = sample_one, method="simple",varImp = "shapImp",final.rule=5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-17-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-19-1.png" width="80%" />
 
 ``` r
 waterfallplot(Model, testObs = sample_one, method="simple", final.rule=4)
 ```
 
-<img src="man/figures/README-unnamed-chunk-18-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
 
 ### Summary & Dependence plot
 
@@ -270,7 +282,7 @@ and tax had a great influence in determining the house price in common.
 PPshapsummary(data_long = shap_long)
 ```
 
-<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="80%" />
 
 Through the dependency plot, for each final leaf, the effect of the
 number of rooms on the house price can be seen. When the number of rooms
@@ -289,7 +301,7 @@ PPshapdependence(shap_long,x = "rm")
 #> Warning: Removed 4 rows containing missing values (geom_smooth).
 ```
 
-<img src="man/figures/README-unnamed-chunk-21-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-23-1.png" width="80%" />
 
 You can add color to see how it relates to other feature. As a result of
 specifying lstat as a color, it can be seen that the lower the lstat and
@@ -297,10 +309,11 @@ the larger the number of rooms, SHAP values increase.
 
 ``` r
 PPshapdependence(shap_long,x = "rm", color_feature = "lstat")
+#> Warning: Removed 2 rows containing missing values (geom_point).
 #> Warning: Removed 4 rows containing missing values (geom_smooth).
 ```
 
-<img src="man/figures/README-unnamed-chunk-22-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-24-1.png" width="80%" />
 
 Next, as a result of examining crim and age, the higher crim contributed
 to the lower house price.
@@ -310,7 +323,7 @@ PPshapdependence(shap_long,x = "crim", color_feature = "age")
 #> Warning: Removed 1 rows containing missing values (geom_point).
 ```
 
-<img src="man/figures/README-unnamed-chunk-23-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
 
 ### Collaboration with other packages
 
@@ -365,26 +378,26 @@ DALEX::model_performance(new_explainer)
 DALEX::model_performance(new_explainer) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-26-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-27-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>%
   plot(geom="profiles")
 ```
 
-<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-30-1.png" width="80%" />
 
 ``` r
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />
 
 #### lime package
 
@@ -443,4 +456,4 @@ class1s_obs
 decisionplot(Model, testObs = class1s_obs$df , method="simple",varImp = "shapImp",final.rule=5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-32-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-34-1.png" width="80%" />

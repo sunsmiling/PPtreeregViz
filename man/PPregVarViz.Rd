@@ -5,7 +5,7 @@
 \title{Visualization of each node in PPtree}
 \usage{
 PPregVarViz(PPTreeregOBJ,var.id,indiv=FALSE,
-                   DEPTH=NULL,smoothMethod="auto")
+                   DEPTH=NULL,smoothMethod="auto", var.factor=FALSE)
 }
 \arguments{
 \item{PPTreeregOBJ}{PPTreereg object}
@@ -17,6 +17,8 @@ PPregVarViz(PPTreeregOBJ,var.id,indiv=FALSE,
 \item{DEPTH}{depth for exploration}
 
 \item{smoothMethod}{method in geom_smooth function}
+
+\item{var.factor}{variable as factor}
 }
 \description{
 Explore PPtree with different Rules in each split.

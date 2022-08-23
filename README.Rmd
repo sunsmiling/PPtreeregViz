@@ -131,6 +131,15 @@ PPregVarViz(Model,"lstat")
 PPregVarViz(Model,"lstat",indiv = TRUE)
 ```
 
+```{r}
+PPregVarViz(Model,"chas",var.factor = TRUE)
+```
+
+```{r}
+PPregVarViz(Model,"chas",indiv = TRUE, var.factor = TRUE)
+```
+
+
 ## Using XAI method
 
 ### Calculate SHAP for PPTreereg method

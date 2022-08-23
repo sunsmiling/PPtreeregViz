@@ -1,41 +1,24 @@
 Package: PPtreeregViz
-Type: Package
-Title: Visualize Projection Pursuit Regression Tree 
-Version: 1.0.1
-Date: 2022-08-22
-Author: c(
-    person("Eun-Kyung", "Lee", email = "lee.eunk@gmail.com", role = "cre"),
-    person("Hyun Sun", "Cho", email = "sunsmiling@naver.com", role = "aut"))
-Maintainer: Hyun Sun Cho <sunsmiling@naver.com>
-Description: Construct Projection Pursuit Regression Trees and visual data investigations
- using SHAP (SHapley Additive exPlanation) visualization plots for 'PPTreereg'. 
- It provides tree information through informative plots and showing shap values by using
- summary plot, dependence plot, interaction plot, and decision plot and relies on
- the SHAP implementation provided by PPTreereg.
+Title: Projection Pursuit Regression Tree Visualization 
+Version: 1.0.2
+Authors@R: c(person("Eun-Kyung", "Lee", role=c("aut")),
+	     person("HyunSun", "Cho", role=c("aut", "cre"), email = "sunsmiling@naver.com"))
+Maintainer: HyunSun Cho <sunsmiling@naver.com>
+Description: This package is a tool for exploring projection pursuit regression tree,
+  visualizing various projection pursuit indexes and 
+  helping to understand the connection between input variables and model output using eXplainable Artificial Intelligence (XAI) methods.
+  The implemented methods help to explore the model at the single instance level as well as the whole dataset level.
+  Projection pursuit regression tree models are also compatible and supported in various XAI packages developed in R.
 License: GPL-3
-Imports: Rcpp (>= 1.0.5),data.table, shapr, ggplot2, dplyr,tidyr,tibble,PPtreeViz,reshape2,magrittr,utils,
-Suggests: 
-    testthat (>= 3.0.0),
-    gridExtra,
-    grid,
-    ggExtra,
-    partykit,
-    ggparty,
-    progress,
-    tidyselect,
-    DALEX,
-    lime,
-    caret,
-    ggforce,
-    waterfalls,
-    forcats,
-    RColorBrewer,
-    knitr,
-    gtable,
-    rmarkdown
-LinkingTo: Rcpp, RcppArmadillo
-RoxygenNote: 7.2.0
 Encoding: UTF-8
-Depends: 
-    R (>= 3.5)
+RoxygenNote: 7.2.1
+Depends: R (>= 4.0.0)
+NeedsCompilation: yes
+Repository: CRAN
+Date: 2022-11-29
+Imports:  Rcpp, data.table, DALEX, lime, shapr, ggplot2, dplyr, tidyr, tibble, PPtreeViz, reshape2, magrittr, utils, caret
+Suggests: testthat, gridExtra, grid, ggExtra, partykit, ggparty, progress, tidyselect, 
+    ggforce, waterfalls, forcats, RColorBrewer, knitr, gtable, rmarkdown
+LinkingTo: Rcpp, RcppArmadillo
 VignetteBuilder: knitr
+URL: https://github.com/sunsmiling/PPtreeregViz

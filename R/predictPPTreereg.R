@@ -1,11 +1,10 @@
-#' predict PPtree
+#' predict projection pursuit regression tree
 #'
-#' Predict class for the test set and calculate prediction error
-#' After finding tree structure, predict class for the test set and calculate
-#' prediction error.
-#' @title predict PPregReg
-#' @param object PPtreereg object
-#' @param newdata  the test dataset
+#' Predict class for the test set with the fitted projection pursuit regression tree and
+#' calculate prediction error.
+#' @title predict \code{PPTreereg}
+#' @param object a fitted object of class inheriting from \code{PPTreereg}
+#' @param newdata the test data set
 #' @param Rule split rule
 #'             1: mean of two group means
 #'             2: weighted mean of two group means - weight with group size
@@ -17,23 +16,33 @@
 #'             8: weighted mean of two group median - weight with group IQR
 #'                                                    and group size
 #'             9: cutoff that minimize error rates in each node
-#' @param final.rule rule to calculate the final node value
-#' @param classinfo return final node information (default is FALSE)
+#' @param final.rule final rule to assign numerical values in the final nodes.
+#'             1: mean value in the final nodes
+#'             2: median value in the final nodes
+#'             3: using optimal projection
+#'             4: using all independent variables
+#'             5: using several significant independent variables
+#' @param classinfo return final node information. Default value is FALSE
 #' @param ... arguments to be passed to methods
 #' @aliases predict
 #' @export
 #' @keywords tree
+#' @examples
+#' data(dataXY)
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' predict(Model)
+#'
 predict.PPTreereg<-function(object,newdata=NULL,Rule=1,final.rule=1,
                             classinfo=FALSE,...) {
 
-   PPtreeregOBJ<-object
+   PPTreeregOBJ<-object
    if(is.null(newdata))
-      newdata<-PPtreeregOBJ$Tree.result$origdata
+      newdata<-PPTreeregOBJ$Tree.result$origdata
 
    if(data.table::is.data.table(newdata))   #for ppshap_calculate
       newdata <- as.data.frame(newdata)
 
-   formula<-as.character(PPtreeregOBJ$formula)
+   formula<-as.character(PPTreeregOBJ$formula)
    class.n<-formula[2]
    data.n<-strsplit(formula[3]," \\+ ")[[1]]
    int.flag<-any(strsplit(formula[3]," \\* ")[[1]] == formula[3])
@@ -49,9 +58,9 @@ predict.PPTreereg<-function(object,newdata=NULL,Rule=1,final.rule=1,
    }
 
    test.data<-as.matrix(test.data)
-   if(!is.null(PPtreeregOBJ$origX.mean)){
+   if(!is.null(PPTreeregOBJ$origX.mean)){
       test.data<-t(apply(test.data,1,function(x)
-         (x-PPtreeregOBJ$origX.mean)/PPtreeregOBJ$origX.sd))
+         (x-PPTreeregOBJ$origX.mean)/PPTreeregOBJ$origX.sd))
    }
    PP.Classification<-function(Tree.Struct,test.class.index,IOindex,
                                test.class,id,rep){
@@ -105,7 +114,7 @@ predict.PPTreereg<-function(object,newdata=NULL,Rule=1,final.rule=1,
       }
       list(test.class.index=test.class.index,class.temp=class.temp)
    }
-   Tree.result<-PPtreeregOBJ$Tree.result
+   Tree.result<-PPTreeregOBJ$Tree.result
    n<-nrow(test.data)
    class.temp<-rep(1, n)
    test.class.index<-NULL
@@ -120,20 +129,20 @@ predict.PPTreereg<-function(object,newdata=NULL,Rule=1,final.rule=1,
    temp<-PP.Classification(Tree.result$Tree.Struct,temp$test.class.index,
                            IOindex,test.class,1,1)
    if(final.rule==1){
-      predict.Y<-PPtreeregOBJ$mean.G[temp$test.class]
+      predict.Y<-PPTreeregOBJ$mean.G[temp$test.class]
    } else if(final.rule==2){
-      predict.Y<-PPtreeregOBJ$median.G[temp$test.class]
+      predict.Y<-PPTreeregOBJ$median.G[temp$test.class]
    } else{
       gt<-table(temp$test.class)
       predict.Y<-rep(0,length(temp$test.class))
       for(i in as.numeric(names(gt))){
          sel.id<-which(temp$test.class==i)
          proj.data<-as.matrix(cbind(rep(1,nrow(test.data)),test.data))%*%
-            matrix(PPtreeregOBJ$coef.G[[final.rule]][i,])
-         if(prod(PPtreeregOBJ$coef.G[[final.rule]][i,]==0)!=1){
+            matrix(PPTreeregOBJ$coef.G[[final.rule]][i,])
+         if(prod(PPTreeregOBJ$coef.G[[final.rule]][i,]==0)!=1){
             predict.Y[sel.id]<-proj.data[sel.id,1]
          } else{
-            predict.Y[sel.id]<-PPtreeregOBJ$mean.G[i]
+            predict.Y[sel.id]<-PPTreeregOBJ$mean.G[i]
          }
       }
    }

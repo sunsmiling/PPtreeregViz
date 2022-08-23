@@ -2,23 +2,27 @@
 % Please edit documentation in R/PPimportance.R
 \name{PPimportance}
 \alias{PPimportance}
-\title{PPimportance PPTreereg}
+\title{Calculate variable importance}
 \usage{
 PPimportance(PPTreeregOBJ,...)
 }
 \arguments{
-\item{PPTreeregOBJ}{PPTreereg object}
+\item{PPTreeregOBJ}{PPTreereg class object - a model to be explained}
 
 \item{...}{arguments to be passed to methods}
 }
 \value{
-imp_node_split predicted values
-
-imp_node_final MSE of the predicted values
-
-imp_var MSE of the predicted values
+An object of the class \code{PPimpobj}
 }
 \description{
-Calculate importance
+Calculate the importance of variables in the \code{PPTreereg} model.
+For local importance, weighted sum of projection coefficients with the number of data corresponding to
+each node as the weighted value in each node is used.
+The global importance is absolute sum of local importance.
 }
-\keyword{tree}
+\examples{
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+PPimportance(Model)
+
+}

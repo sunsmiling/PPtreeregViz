@@ -1,10 +1,11 @@
-#' summary PPTreereg result
+#' summary \code{PPTreereg} result
 #'
 #' summary the projection pursuit regression tree result
-#' @title Summary PPTreereg result
-#' @param object PPTreereg object
-#' @param c number of node
+#' @title Summary \code{PPTreereg} result
+#' @param object a fitted object of class inheriting from \code{PPTreereg}
+#' @param c choose node id to summary. Default value is FALSE.
 #' @param ... arguments to be passed to methods
+#' @aliases summary.PPTreereg
 #' @export
 
 summary.PPTreereg<-function(object,c=NA, ...){

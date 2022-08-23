@@ -1,15 +1,20 @@
-#' PPimportance PPTreereg
+#' Calculate variable importance
 #'
-#' Calculate importance
+#' Calculate the importance of variables in the \code{PPTreereg} model.
+#' For local importance, weighted sum of projection coefficients with the number of data corresponding to
+#' each node as the weighted value in each node is used.
+#' The global importance is absolute sum of local importance.
+#'
 #' @usage PPimportance(PPTreeregOBJ,...)
-#' @param PPTreeregOBJ PPTreereg object
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
 #' @param ... arguments to be passed to methods
-#' @return imp_node_split predicted values
-#' @return imp_node_final MSE of the predicted values
-#' @return imp_var MSE of the predicted values
+#' @return An object of the class \code{PPimpobj}
 #' @export
-#' @keywords tree
-
+#' @examples
+#' data(dataXY)
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' PPimportance(Model)
+#'
 PPimportance<-function(PPTreeregOBJ,...){
   PPtreeOBJ<-PPTreeregOBJ$Tree.result
   n.class<-length(table(PPtreeOBJ$origclass))
@@ -38,7 +43,7 @@ PPimportance<-function(PPTreeregOBJ,...){
   }
   p<-ncol(proj.best)
   node.final<-round(node.final*p,3)
-  colnames(node.final)<-paste("class",1:n.class)
+  colnames(node.final)<-paste("FinalNode",1:n.class)
   node.split<-data.frame(node.id=TS[which(TS[,4]!=0),
                                     1][sort.list(TS[TS[,4]!=0,4])],
                          node.n=TS[which(TS[,4]!=0),

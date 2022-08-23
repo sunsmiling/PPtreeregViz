@@ -1,10 +1,18 @@
-#' Plot using ggparty
+#' projection pursuit regression tree plot with independent variable
 #'
-#' Put Indipendent Variable
+#' Draw projection pursuit regression tree with independent variable. It is modified
+#' from a function in \code{partykit} library.
+#' @title PPTreereg plot with independent variable
 #' @usage pp_ggparty(PPTreeregOBJ,ind_variable,final.rule=5,Rule=1, ...)
-#' @param PPTreeregOBJ PPTreereg object
-#' @param ind_variable independent varible to show
-#' @param final.rule final.rule
+#' @param PPTreeregOBJ PPTreereg class object
+#' @param ind_variable independent variable to show
+#' @param final.rule final rule to assign numerical values in the final nodes.
+#'             1: mean value in the final nodes
+#'             2: median value in the final nodes
+#'             3: using optimal projection
+#'             4: using all independent variables
+#'             5: using several significant independent variables
+#'
 #' @param Rule split rule
 #'             1: mean of two group means
 #'             2: weighted mean of two group means - weight with group size
@@ -18,6 +26,14 @@
 #' @param ... arguments to be passed to methods
 #' @export
 #' @keywords tree
+#'
+#' @return An object of the class \code{ggplot}
+#'
+#' @examples
+#' data(dataXY)
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' pp_ggparty(Model, "X1", final.rule=5)
+#'
 
 pp_ggparty <- function(PPTreeregOBJ,ind_variable,final.rule=5, Rule=1, ...){
 
@@ -49,10 +65,6 @@ pp_ggparty <- function(PPTreeregOBJ,ind_variable,final.rule=5, Rule=1, ...){
       ret <- as.data.frame(matrix(nrow = NROW(mf), ncol = 0))
       ret[["(fitted)"]] <- apply(matrix(as.numeric(predict.PPTreereg(PPTreeregOBJ, final.rule = final.rule, classinfo = TRUE)$Yhat.class,ncol=1)),1,
                                  function(x) which((data.frame(ff)$R.node.ID==x)*is.leaf==1))
-
-      #predict.PPTreereg(PPTreeregOBJ, final.rule = 5,classinfo = TRUE)$Yhat
-      # ret[["(fitted)"]] <- apply(matrix(as.numeric(names(predict.PPTreereg(PPTreeregOBJ, final.rule = 1))),ncol=1),1,
-      #                            function(x) which((data.frame(ff)$R.node.ID==x)*is.leaf==1))
 
       ret[["(response)"]] <- PPTreeregOBJ$origclass
       ret

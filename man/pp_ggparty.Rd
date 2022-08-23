@@ -2,16 +2,21 @@
 % Please edit documentation in R/plotPPggparty.R
 \name{pp_ggparty}
 \alias{pp_ggparty}
-\title{Plot using ggparty}
+\title{PPTreereg plot with independent variable}
 \usage{
 pp_ggparty(PPTreeregOBJ,ind_variable,final.rule=5,Rule=1, ...)
 }
 \arguments{
-\item{PPTreeregOBJ}{PPTreereg object}
+\item{PPTreeregOBJ}{PPTreereg class object}
 
-\item{ind_variable}{independent varible to show}
+\item{ind_variable}{independent variable to show}
 
-\item{final.rule}{final.rule}
+\item{final.rule}{final rule to assign numerical values in the final nodes.
+1: mean value in the final nodes
+2: median value in the final nodes
+3: using optimal projection
+4: using all independent variables
+5: using several significant independent variables}
 
 \item{Rule}{split rule
 1: mean of two group means
@@ -26,7 +31,20 @@ pp_ggparty(PPTreeregOBJ,ind_variable,final.rule=5,Rule=1, ...)
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+An object of the class \code{ggplot}
+}
 \description{
-Put Indipendent Variable
+projection pursuit regression tree plot with independent variable
+}
+\details{
+Draw projection pursuit regression tree with independent variable. It is modified
+from a function in \code{partykit} library.
+}
+\examples{
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+pp_ggparty(Model, "X1", final.rule=5)
+
 }
 \keyword{tree}

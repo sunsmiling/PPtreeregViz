@@ -1,8 +1,12 @@
 #' weight_matrix
 #'
 #' @param X X
-#' @param normalize_W_weights TRUE
-#' @export
+#' @param normalize_W_weights default is TRUE
+#' @author Nikolai Sellereite
+#' @references The \code{shapr} package developed by
+#' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
+#' \doi{10.1016/j.artint.2021.103502} and modified some codes at
+#' \url{https://github.com/NorskRegnesentral/shapr}
 #'
 weight_matrix <- function(X, normalize_W_weights = TRUE) {
 
@@ -15,8 +19,8 @@ weight_matrix <- function(X, normalize_W_weights = TRUE) {
 
   W <- weight_matrix_cpp(
     subsets = X[["features"]],
-    m = X[.N][["n_features"]], #3
-    n = X[, .N], #8
+    m = X[.N][["n_features"]],
+    n = X[, .N],
     w = w
   )
 
@@ -27,6 +31,11 @@ weight_matrix <- function(X, normalize_W_weights = TRUE) {
 #'
 #' @param m m
 #' @param weight_zero_m  weight_zero_m
+#' @author Nikolai Sellereite
+#' @references The \code{shapr} package developed by
+#' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
+#' \doi{10.1016/j.artint.2021.103502} and modified some codes at
+#' \url{https://github.com/NorskRegnesentral/shapr}
 #'
 feature_exact <- function(m, weight_zero_m = 10^6) {
   features <- id_combination <- n_features <- shapley_weight <- N <- NULL # due to NSE notes in R CMD check
@@ -47,6 +56,11 @@ feature_exact <- function(m, weight_zero_m = 10^6) {
 #' @param N N
 #' @param n_components n_components
 #' @param weight_zero_m weight_zero_m
+#' @author Nikolai Sellereite
+#' @references The \code{shapr} package developed by
+#' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
+#' \doi{10.1016/j.artint.2021.103502} and modified some codes at
+#' \url{https://github.com/NorskRegnesentral/shapr}
 #'
 shapley_weights <- function(m, N, n_components, weight_zero_m = 10^6) {
   x <- (m - 1) / (N * n_components * (m - n_components))
@@ -54,13 +68,17 @@ shapley_weights <- function(m, N, n_components, weight_zero_m = 10^6) {
   x
 }
 
-#' Calculate shap values with simple methods
+#' Calculate \code{PPKernelSHAP} values with simple methods
 #'
-#' @param PPTreeregOBJ PPTreereg object
-#' @param testObs testObs
-#' @param final.rule rule to calculate the final node value
-#' @param final.leaf final leaf
-#' @export
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
+#' @param testObs test data observation
+#' @param final.rule final rule to assign numerical values in the final nodes.
+#'             1: mean value in the final nodes
+#'             2: median value in the final nodes
+#'             3: using optimal projection
+#'             4: using all independent variables
+#'             5: using several significant independent variables
+#' @param final.leaf location of final leaf
 #'
 ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL){
   origclass <- id_combination <- leafid <- p_hat <- finalLeaf <-  NULL # due to NSE notes in R CMD check
@@ -68,13 +86,7 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
   leaf_len = length(PPTreeregOBJ$class.num)
 
   x_train <- data.table::as.data.table(PPTreeregOBJ$Tree.result$origdata)
-  #####
-  # if(is.numeric(class(testObs))){
-  #   testObs <- as.data.frame(t(testObs))
-  # }
-  # if(class(testObs) == "numeric"){
-  #  testObs <- as.data.frame(t(testObs))
-  # }
+
 
   if(is.null(nrow(testObs))){
     testObs <- as.data.frame(t(testObs))
@@ -121,7 +133,7 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
     dt_l[[l]] <- data.table::as.data.table(dt_p)
     data.table::setnames(dt_l[[l]], colnames(x_train_))
     dt_l[[l]][, id_combination := index_simple]
-    dt_l[[l]][, w := w] # IS THIS NECESSARY?
+    dt_l[[l]][, w := w]
     dt_l[[l]][, leafid := l]
   }
 
@@ -173,24 +185,35 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
 
 }
 
-#' Calculate shap values with empirical methods
+#' Calculate \code{PPKernelSHAP} values with empirical methods
 #'
-#' @param PPTreeregOBJ PPTreeregOBJ
-#' @param testObs testObs
-#' @param final.rule rule to calculate the final node value
-#' @export
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
+#' @param testObs test data observation
+#' @param final.rule final rule to assign numerical values in the final nodes.
+#'             1: mean value in the final nodes
+#'             2: median value in the final nodes
+#'             3: using optimal projection
+#'             4: using all independent variables
+#'             5: using several significant independent variables
+#' @param final.leaf location of final leaf
 #'
-ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule){
+ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL){
   origclass <- id_combination <- leafid <- V1 <- p_hat <- finalLeaf <- keep <- NULL # due to NSE notes in R CMD check
 
   finalRule = as.integer(final.rule)
   leaf_len = length(PPTreeregOBJ$class.num)
-  if(is.numeric(class(testObs))){
+  x_train <- data.table::as.data.table(PPTreeregOBJ$Tree.result$origdata)
+
+  if(is.null(nrow(testObs))){
     testObs <- as.data.frame(t(testObs))
   }
-
-  x_train <- data.table::as.data.table(PPTreeregOBJ$Tree.result$origdata)
   x_test <- data.table::as.data.table(testObs)
+
+  if(nrow(x_test)>1){
+    stop("nrow of test observation is more than 1")
+  }
+
+
   feature_names <- names(x_train)
   n_features <- ncol(x_train)
 
@@ -229,9 +252,8 @@ ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule){
     dt_l[[l]] <- data.table::as.data.table(dt_p)
     data.table::setnames(dt_l[[l]], colnames(x_train_))
     dt_l[[l]][, id_combination := index_s_]
-    dt_l[[l]][, w := w] # IS THIS NECESSARY?
+    dt_l[[l]][, w := w]
     dt_l[[l]][, leafid := l]
-    #dt_l[[l]][, testid := i]
   }
 
   dt = data.table::rbindlist(dt_l, use.names = TRUE, fill = TRUE)
@@ -264,14 +286,20 @@ ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule){
   dt_kshap[,finalLeaf := seq(leaf_len)]
   colnames(dt_kshap) <- c("none", feature_names, "finalLeaf")
 
+  if(is.null(final.leaf)){
+    # get_class_info
+    class_info <- predict.PPTreereg(PPTreeregOBJ,testObs,final.rule = finalRule,classinfo = TRUE)$Yhat.class
+    dt_kshap_final <- dt_kshap[class_info,]
+  }else{
+    dt_kshap_final <- dt_kshap[final.leaf,]
+  }
+
   r <- list(
-    dt = dt_kshap,
+    dt = dt_kshap_final,
     model = PPTreeregOBJ,
     p = p_all,
     final.rule = finalRule,
     x_test = x_test
   )
-
   return(r)
-
 }

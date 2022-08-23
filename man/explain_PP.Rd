@@ -2,12 +2,12 @@
 % Please edit documentation in R/explain_PP.R
 \name{explain_PP}
 \alias{explain_PP}
-\title{Make explainer for PPTreeregObj}
+\title{Make explain of \code{PPTreeregObj} for \code{DALEX} package}
 \usage{
 explain_PP(PPTreeregOBJ, data, y, final.rule,...)
 }
 \arguments{
-\item{PPTreeregOBJ}{PPTreereg object}
+\item{PPTreeregOBJ}{PPTreereg class object - a model to be explained}
 
 \item{data}{data.frame or matrix - data that was used for fitting. If not provided then will be extracted from the model. Data should be passed without target column (this shall be provided as the y argument).}
 
@@ -17,6 +17,24 @@ explain_PP(PPTreeregOBJ, data, y, final.rule,...)
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+An object of the class \code{explainer}.
+}
 \description{
-explainer make for PPTreereg
+Create Model Explainer for PPTreereg
+}
+\details{
+This function creates a unified representation explain of PPTreereg model for cooperate with \code{DALEX} package.
+}
+\examples{
+library("DALEX")
+library("dplyr")
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+new_explainer <- explain_PP(Model, data = dataXY[,-1],y = dataXY[,1],final.rule= 5)
+DALEX::model_performance(new_explainer) \%>\% plot(geom = "ecdf")
+
+}
+\references{
+Explanatory Model Analysis. Explore, Explain and Examine Predictive Models. \url{https://ema.drwhy.ai/}
 }

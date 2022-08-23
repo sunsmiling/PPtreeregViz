@@ -11,9 +11,9 @@
 #' @param data data frame
 #' @param DEPTH depth of the projection pursuit regression tree
 #' @param Rr cutoff rule in each node
-#' @param PPmethod method for projection pursuit; "LDA", "PDA", "Lr",
-#'                 "GINI", and "ENTROPY"
-#' @param weight weight flag in LDA, PDA and Lr index
+#' @param PPmethod method for projection pursuit; \code{"LDA"}, \code{"PDA"}, \code{"Lr"},
+#'                 \code{"GINI"}, and \code{"ENTROPY"}.
+#' @param weight weight flag in \code{LDA}, \code{PDA} and \code{Lr} index
 #' @param lambda lambda in PDA index
 #' @param r r in Lr index
 #' @param TOL.CV CV limit for the final node
@@ -28,23 +28,21 @@
 #' @param maxNodeN maximum number of observations in the final node
 #' @param ... arguments to be passed to methods
 #' @return Tree.result projection pursuit regression tree result with
-#'                     PPtreeclass object format
+#'                     \code{PPtreeclass} object format
 #' @return MSE mean squared error of the final tree
-#' @return mean.G  means of the observations in the final node
-#' @return sd.G standard deviations of the observations in the final node.
-#' @return coef.G regression coefficients for Method 3, 4 and 5
-#' @return origY original dependent variable vector
-#' @return origX.mean mean of origX
-#' @return origX.sd sd of origX
-#' @return class.origX.mean means of the each independent variables in the final node
+#' @return \code{mean.G}  means of the observations in the final node
+#' @return \code{sd.G} standard deviations of the observations in the final node.
+#' @return \code{coef.G} regression coefficients for Method 3, 4 and 5
+#' @return \code{origY} original dependent variable vector
+#' @return \code{origX.mean} mean of original X
+#' @return \code{origX.sd} standard deviation of original X
+#' @return \code{class.origX.mean} means of the each independent variables in the final node
 #' @references ...
 #' @export
 #' @keywords tree
-
 ## usethis namespace: start
 #' @useDynLib PPtreeregViz, .registration = TRUE
 ## usethis namespace: end
-
 #' @importFrom magrittr %>%
 #'
 #' @examples

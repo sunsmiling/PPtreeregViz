@@ -2,20 +2,35 @@
 % Please edit documentation in R/plotPPimportance.R
 \name{plot.PPimportance}
 \alias{plot.PPimportance}
-\title{Plot Importance of trained Tree}
+\title{Variable importance plot of \code{PPTreereg}}
 \usage{
 \method{plot}{PPimportance}(x, marginal = FALSE, num_var = 5, ...)
 }
 \arguments{
-\item{x}{PPTreereg Importance object}
+\item{x}{an importance object of the class \code{PPimpobj}, created with \code{\link{PPimportance}} function}
 
-\item{marginal}{show each node. default if FALSE}
+\item{marginal}{plot global importance. Default value is FALSE.}
 
-\item{num_var}{number of variables to show}
+\item{num_var}{number of variables to show.}
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+An object of the class \code{ggplot}
+}
 \description{
-Plot Importance of trained Tree
+Visualize importance measure of trained \code{PPTreereg} model.
+}
+\details{
+To visualize the variable importance values of \code{PPTreereg} model, two types of plots are
+provided - importance of variables for each final node and global variable importance.
+}
+\examples{
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+Tree.Imp <- PPimportance(Model)
+plot(Tree.Imp)
+plot(Tree.Imp, marginal = TRUE)
+
 }
 \keyword{tree}

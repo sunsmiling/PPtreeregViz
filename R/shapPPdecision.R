@@ -1,65 +1,41 @@
-#' waterfallplot
+#' decision plot for \code{PPKernelSHAP}
 #'
-#' @param PPTreeregOBJ PPTreereg object
-#' @param testObs testObs
-#' @param final.rule final.rule
-#' @param method simple or empirical
-#' @param final.leaf final leaf
+#' Decision plots are mainly used to explain individual predictions that how the model makes decision,
+#' by focusing more on how model’s  predictions reach to their expected y value with \code{PPKernelSHAP} values.
+#'
+#' @title Decision plot
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
+#' @param testObs test data observation
+#' @param final.rule final rule to assign numerical values in the final nodes.
+#'             1: mean value in the final nodes
+#'             2: median value in the final nodes
+#'             3: using optimal projection
+#'             4: using all independent variables
+#'             5: using several significant independent variables
+#' @param method simple or empirical method to calculate \code{PPKernelSHAP}
+#' @param varImp \code{shapImp} or \code{treeImp} - Sorted by descending order of variance or the variable importance from coefficient values of the nodes inside
+#' the \code{PPTreereg}.
+#' @param final.leaf location of final leaf
+#' @param Yrange show the entire final prediction range of the dependent variable. Default value is FALSE.
 #' @export
-#'
-waterfallplot <- function(PPTreeregOBJ, testObs, final.rule = 5, method="simple", final.leaf = NULL){
-  icols <- V1 <-  ..icols <- rowname <- finalLeaf <- NULL # due to NSE notes in R CMD check
-  if(method=="simple"){
-    tmp <- ppshapr.simple(PPTreeregOBJ,testObs,final.rule,final.leaf = final.leaf)$dt
-  }else{
-    tmp <- ppshapr.empirical(PPTreeregOBJ,testObs,final.rule)$dt
-  }
-  PPshapvalue <- tmp %>% as.data.frame() %>%
-    tibble::rownames_to_column() %>%
-    dplyr::select(-c(rowname, finalLeaf)) %>%
-    reshape2::melt(id.vars = NULL) #  tmp
-  plotT <- PPshapvalue %>% waterfalls::waterfall(calc_total=TRUE,
-                                                 rect_text_labels = round(PPshapvalue$value, 3),
-                                                 total_rect_text = round(sum(PPshapvalue$value),5),
-                                                 total_axis_text = "Prediction",
-                                                 total_rect_text_color="black",
-                                                 lines_anchors = c("left", "right"),
-                                                 total_rect_color="goldenrod1")+
-    ggplot2::coord_flip()+
-    ggplot2::labs(
-      title = "Decision plot for test data",
-      subtitle = paste0("final leaf = ", tmp[,"finalLeaf"]),
-      y="",
-      x="")+
-    ggplot2::theme_minimal()
-
-  plotT
-}
-
-
-
-#' decisionplot_new
-#'
-#' @param PPTreeregOBJ PPTreereg object
-#' @param testObs testObs
-#' @param final.rule final.rule
-#' @param method method
-#' @param varImp shapImp or treeimp
-#' @param final.leaf final.leaf
-#' @param Yrange Yrange
-#' @export
+#' @return An object of the class \code{ggplot}
+#' @examples
+#' data(dataXY)
+#' testX <- dataXY[1,-1]
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' decisionplot(Model, testX, final.rule =5, method="simple")
 #'
 decisionplot <- function(PPTreeregOBJ, testObs, final.rule = 5, method="simple",varImp = "shapImp",final.leaf = NULL, Yrange = FALSE){
 
-  icols <- V1 <- finalLeaf <- shapsums <- none <- value <- id <- yhat <- ..impOrdering <- variable <- NULL
+  icols <- V1 <- finalLeaf <- shapsums <- none <- value <- id <- yhat <- impOrderings <- impOrdering <- variable <- NULL
   if(method=="simple"){
     if(nrow(testObs)==1){
-      ppSHAP <- ppshapr.simple(PPTreeregOBJ,testObs,final.rule,final.leaf = final.leaf)$dt %>% dplyr::as_tibble()
+      ppSHAP <- ppshapr.simple(PPTreeregOBJ, testObs, final.rule = final.rule, final.leaf = final.leaf)$dt %>% dplyr::as_tibble()
     }else if(nrow(testObs)>1){
       ppSHAP <- c()
       testNum = nrow(testObs)
       for(p in 1:testNum){
-        ppSHAP[[p]] <-  ppshapr.simple(PPTreeregOBJ,testObs[p,], final.rule = final.rule, final.leaf = final.leaf)$dt
+        ppSHAP[[p]] <-  ppshapr.simple(PPTreeregOBJ, testObs[p,], final.rule = final.rule, final.leaf = final.leaf)$dt
         ppSHAP[[p]][,':='(id,p)]
       }
       ppSHAP <- data.table::rbindlist(ppSHAP)
@@ -67,10 +43,19 @@ decisionplot <- function(PPTreeregOBJ, testObs, final.rule = 5, method="simple",
       print("nrow(testObs) < 1")
     }
   }else{
-    ppSHAP <- ppshapr.empirical(PPTreeregOBJ,testObs,final.rule)$dt %>% dplyr::as_tibble()###
-    ####more
-    #ppSHAP <- ppshapr.empirical(PPTreeregOBJ,testObs,final.rule,final.leaf = final.leaf)$dt %>% dplyr::as_tibble()###
-    ####more
+    if(nrow(testObs)==1){
+      ppSHAP <- ppshapr.empirical(PPTreeregOBJ, testObs, final.rule = final.rule, final.leaf = final.leaf)$dt %>% dplyr::as_tibble()
+    }else if(nrow(testObs)>1){
+      ppSHAP <- c()
+      testNum = nrow(testObs)
+      for(p in 1:testNum){
+        ppSHAP[[p]] <-  ppshapr.empirical(PPTreeregOBJ,testObs[p,], final.rule = final.rule, final.leaf = final.leaf)$dt
+        ppSHAP[[p]][,':='(id,p)]
+      }
+      ppSHAP <- data.table::rbindlist(ppSHAP)
+    }else{
+      print("nrow(testObs) < 1")
+    }
   }
 
 
@@ -79,22 +64,23 @@ decisionplot <- function(PPTreeregOBJ, testObs, final.rule = 5, method="simple",
       namesImp <- ppSHAP %>% dplyr::select(-none, -finalLeaf)
       shapImp_value <- namesImp %>% as.numeric()
       namesImp <- namesImp %>% colnames()
-      impOrdering <-  c("none", namesImp[c(shapImp_value %>% abs()%>%  order(decreasing = FALSE))],"finalLeaf")
+      impOrdering <-  c("none", namesImp[c(shapImp_value %>% abs() %>%  order(decreasing = FALSE))],"finalLeaf")
       ppSHAP_reorder <- ppSHAP[,impOrdering]
       ppSHAP_reorder$id <- 1
     }else{
       namesImp <- ppSHAP %>% dplyr::select(-none, -finalLeaf, -id)
       shapImp_value <- namesImp %>% dplyr::summarise_all(var) %>% as.numeric()
       namesImp <- namesImp %>% colnames()
-      impOrdering <- c("none", namesImp[c(shapImp_value %>% abs()%>%  order(decreasing = FALSE))],"finalLeaf","id")
-      ppSHAP_reorder <- ppSHAP[,..impOrdering]
+      impOrderings <- c("none", namesImp[c(shapImp_value %>% abs()%>%  order(decreasing = FALSE))],"finalLeaf","id")
+      ppSHAP_reorder <- ppSHAP[,impOrderings, with=FALSE]
     }
   }else{
     TreeImp <- PPimportance(PPTreeregOBJ)
     namesImp <- TreeImp$imp_var %>% names()
     impOrdering <- c("none",namesImp[c(TreeImp$imp_var %>% order(decreasing = FALSE))],"finalLeaf")
-    ppSHAP_reorder <- ppSHAP[,..impOrdering]
+    ppSHAP_reorder <- ppSHAP[,impOrdering, with=FALSE]
   }
+
   ppSHAP_melt <- ppSHAP_reorder %>%
     dplyr::select(-finalLeaf) %>%
     reshape2::melt("id") %>% dplyr::arrange(id)%>%

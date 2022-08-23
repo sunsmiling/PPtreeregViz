@@ -11,7 +11,7 @@ A data frame with 100 rows and 4 variables.
 data(dataXY)
 }
 \description{
-The \code{dataXY} dataset is simulated data for running Projection Pursuit regression tree model.
+The \code{dataXY} dataset is simulated data for running Projection Pursuit Regression Tree Model.
 }
 \details{
 It contains 100 rows and 4 variables.

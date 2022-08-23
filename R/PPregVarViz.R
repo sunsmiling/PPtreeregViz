@@ -1,17 +1,24 @@
-#' Visualization of each node in PPtree
+#' Visualize independent variable action in projection pursuit regression tree.
 #'
-#' Explore PPtree with different Rules in each split.
+#' This function is developed to see the influence of independent variables on the range of dependent variable.
 #' @usage PPregVarViz(PPTreeregOBJ,var.id,indiv=FALSE,
 #'                    DEPTH=NULL,smoothMethod="auto", var.factor=FALSE)
-#' @param PPTreeregOBJ PPTreereg object
-#' @param var.id X variable name
-#' @param indiv TRUE: individual group plot, FLASE: combined one plot
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
+#' @param var.id independent variable name
+#' @param indiv TRUE: individual group plot, FALSE: combined one plot
 #' @param DEPTH depth for exploration
 #' @param smoothMethod method in geom_smooth function
-#' @param var.factor variable as factor
+#' @param var.factor TRUE when indepedent variable is a categorical variable (as factor)
 #' @export
+#' @return An object of the class \code{ggplot}
 #' @import PPtreeViz
 #' @keywords tree
+#' @examples
+#' data(dataXY)
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' PPregVarViz(Model,"X1")
+#' PPregVarViz(Model,"X1",indiv = TRUE)
+#'
 PPregVarViz<-function(PPTreeregOBJ,var.id,indiv=FALSE,
                       DEPTH=NULL,smoothMethod="auto", var.factor = FALSE){
 
@@ -30,14 +37,14 @@ PPregVarViz<-function(PPTreeregOBJ,var.id,indiv=FALSE,
           dplyr::mutate(origclass = paste0("final leaf class : ",finalclass)) %>%
           ggplot2::ggplot(ggplot2::aes(x=X,y=Y,group=finalclass))+
           ggplot2::geom_point(ggplot2::aes(color=finalclass),
-                              position = ggplot2::position_jitterdodge(),
+                              position = ggplot2::position_jitterdodge(seed = 1),
                               show.legend = FALSE)+
           ggplot2::facet_wrap(~origclass,scale="free")+
           ggplot2::xlab(var.id)+ggplot2::theme_bw()
       } else {
         ggplot2::ggplot(plot.data,ggplot2::aes(x=X,y=Y,group=finalclass))+
           ggplot2::geom_point(ggplot2::aes(color=finalclass),
-                              position = ggplot2::position_jitterdodge(dodge.width = 0 ),
+                              position = ggplot2::position_jitterdodge(dodge.width = 0,seed = 1 ),
                               show.legend = FALSE)+
           ggplot2::geom_hline(yintercept=vlineY,
                               color="grey70",linetype=2)+

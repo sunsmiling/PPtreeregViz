@@ -19,10 +19,10 @@ PPTreereg(formula,data,DEPTH=NULL,Rr=1,PPmethod="LDA",
 
 \item{Rr}{cutoff rule in each node}
 
-\item{PPmethod}{method for projection pursuit; "LDA", "PDA", "Lr",
-"GINI", and "ENTROPY"}
+\item{PPmethod}{method for projection pursuit; \code{"LDA"}, \code{"PDA"}, \code{"Lr"},
+\code{"GINI"}, and \code{"ENTROPY"}.}
 
-\item{weight}{weight flag in LDA, PDA and Lr index}
+\item{weight}{weight flag in \code{LDA}, \code{PDA} and \code{Lr} index}
 
 \item{lambda}{lambda in PDA index}
 
@@ -51,23 +51,23 @@ the tree structure. Default value is TRUE}
 }
 \value{
 Tree.result projection pursuit regression tree result with
-                    PPtreeclass object format
+                    \code{PPtreeclass} object format
 
 MSE mean squared error of the final tree
 
-mean.G  means of the observations in the final node
+\code{mean.G}  means of the observations in the final node
 
-sd.G standard deviations of the observations in the final node.
+\code{sd.G} standard deviations of the observations in the final node.
 
-coef.G regression coefficients for Method 3, 4 and 5
+\code{coef.G} regression coefficients for Method 3, 4 and 5
 
-origY original dependent variable vector
+\code{origY} original dependent variable vector
 
-origX.mean mean of origX
+\code{origX.mean} mean of original X
 
-origX.sd sd of origX
+\code{origX.sd} standard deviation of original X
 
-class.origX.mean means of the each independent variables in the final node
+\code{class.origX.mean} means of the each independent variables in the final node
 }
 \description{
 Find regression tree structure using various projection pursuit indices

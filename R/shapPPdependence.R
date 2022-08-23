@@ -1,13 +1,28 @@
-#' Title
+#' Dependency plot using \code{PPKernelSHAP}
 #'
-#' @param data_long ppshapr_prep object
-#' @param x variable1
-#' @param y variable2
-#' @param color_feature display color
-#' @param smooth geom_smooth
+#' Dependency plots are designed to show the effect of one independent variable on the model's prediction.
+#' Each point corresponds to each row of the training data,
+#' and the y axis corresponds the \code{PPKernelSHAP} value of the variable,
+#' indicating how much knowing the value of the variable changes the output of the model
+#' for the prediction of the data.
+#' @title Dependency plot
+#' @usage PPshapdependence(data_long, x, y=NULL, color_feature=NULL, smooth=TRUE)
+#' @param data_long \code{ppshapr_prep} class object.
+#' @param x the independent variable to see
+#' @param y the interaction effect by putting the values of the independent variables in different colors.
+#' @param color_feature display other variables with color. Default value is NULL.
+#' @param smooth geom_smooth option. Default value is TRUE.
 #' @export
+#' @return An object of the class \code{ggplot}
 #'
-PPshapdependence <- function(data_long,x,y=NULL, color_feature=NULL, smooth=TRUE){
+#' @examples
+#' data(dataXY)
+#' testX <- dataXY[1,-1]
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' shap_long <- ppshapr_prep(Model, final.rule =5, method="simple")
+#' PPshapdependence(shap_long,x = "X1")
+#'
+PPshapdependence <- function(data_long, x, y=NULL, color_feature=NULL, smooth=TRUE){
   variable <- value <-  finalLeaf <- rfvalue  <- stdfvalue <- color_value <- NULL # due to NSE notes in R CMD check
   leafnum <- max(data_long$finalLeaf)
   yrange <- data_long[variable==x,range(value)]

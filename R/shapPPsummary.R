@@ -1,8 +1,21 @@
-#' Title
+#' Summary plot using \code{PPKernelSHAP}
 #'
-#' @param data_long ppshapr_prep object
+#' A summary plot is used to see the aspects of important variables for each final node.
+#' The summary plot summarizes information about the independent variables that contributed the most to the model's prediction
+#' in the training data in the form of a density plot.
+#' @title Summary plot
+#' @usage PPshapsummary(data_long,...)
+#' @param data_long \code{ppshapr_prep} class object.
 #' @param ... arguments to be passed to methods
 #' @export
+#' @return An object of the class \code{ggplot}
+#'
+#' @examples
+#' data(dataXY)
+#' testX <- dataXY[1,-1]
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' shap_long <- ppshapr_prep(Model, final.rule =5, method="simple")
+#' PPshapsummary(shap_long)
 #'
 PPshapsummary <- function(data_long,...){
   value <- variable<- stdfvalue <- finalLeaf <- NULL # due to NSE notes in R CMD check

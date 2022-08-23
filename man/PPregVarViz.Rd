@@ -2,25 +2,35 @@
 % Please edit documentation in R/PPregVarViz.R
 \name{PPregVarViz}
 \alias{PPregVarViz}
-\title{Visualization of each node in PPtree}
+\title{Visualize independent variable action in projection pursuit regression tree.}
 \usage{
 PPregVarViz(PPTreeregOBJ,var.id,indiv=FALSE,
                    DEPTH=NULL,smoothMethod="auto", var.factor=FALSE)
 }
 \arguments{
-\item{PPTreeregOBJ}{PPTreereg object}
+\item{PPTreeregOBJ}{PPTreereg class object - a model to be explained}
 
-\item{var.id}{X variable name}
+\item{var.id}{independent variable name}
 
-\item{indiv}{TRUE: individual group plot, FLASE: combined one plot}
+\item{indiv}{TRUE: individual group plot, FALSE: combined one plot}
 
 \item{DEPTH}{depth for exploration}
 
 \item{smoothMethod}{method in geom_smooth function}
 
-\item{var.factor}{variable as factor}
+\item{var.factor}{TRUE when indepedent variable is a categorical variable (as factor)}
+}
+\value{
+An object of the class \code{ggplot}
 }
 \description{
-Explore PPtree with different Rules in each split.
+This function is developed to see the influence of independent variables on the range of dependent variable.
+}
+\examples{
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+PPregVarViz(Model,"X1")
+PPregVarViz(Model,"X1",indiv = TRUE)
+
 }
 \keyword{tree}

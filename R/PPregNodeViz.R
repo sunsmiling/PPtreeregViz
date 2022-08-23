@@ -1,13 +1,35 @@
-#' Visualization of each node in PPtree
+#' Visualize node in projection pursuit regression tree.
 #'
-#' Explore PPtree with different Rules in each split.
+#' This function is developed for the visualization of inner and final nodes.
+#' Visual representation of the projection coefficient value of each node and
+#' the result of projected data help understand growth process of the projection pursuit regression tree.
+#' For the inner node, two plots are provided - the bar chart style plot with
+#' projection pursuit coefficients of each variable, the histogram of the
+#' projected data.
+#' For the final node, scatter plot of observed Y vs. fitted Y according to the final rules.
+#' @title Node visualization
 #' @usage PPregNodeViz(PPTreeregOBJ,node.id,Rule=5)
-#' @param PPTreeregOBJ  PPregtree object
-#' @param node.id node ID
-#' @param Rule cutoff rule
+#' @param PPTreeregOBJ PPTreereg class object - a model to be explained
+#' @param node.id node ID of inner or final node
+#' @param Rule split rule
+#'             1: mean of two group means
+#'             2: weighted mean of two group means - weight with group size
+#'             3: weighted mean of two group means - weight with group sd
+#'             4: weighted mean of two group means - weight with group se
+#'             5: mean of two group medians
+#'             6: weighted mean of two group medians - weight with group size
+#'             7: weighted mean of two group median - weight with group IQR
+#'             8: weighted mean of two group median - weight with group IQR
+#'                                                    and group size
 #' @export
 #' @keywords tree
-
+#' @return An object of the class \code{ggplot}
+#' @examples
+#' data(dataXY)
+#' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+#' PPregNodeViz(Model,node.id=1)
+#' PPregNodeViz(Model,node.id=4)
+#'
 PPregNodeViz<-function(PPTreeregOBJ,node.id,Rule=5){
 
   searchGroup<-function(node.id,TS,gName){

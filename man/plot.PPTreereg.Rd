@@ -2,12 +2,13 @@
 % Please edit documentation in R/plotPPtreereg.R
 \name{plot.PPTreereg}
 \alias{plot.PPTreereg}
+\alias{plot}
 \title{PPTreereg plot}
 \usage{
 \method{plot}{PPTreereg}(x, font.size = 17, width.size = 1, ...)
 }
 \arguments{
-\item{x}{PPTreereg object}
+\item{x}{PPTreereg class object}
 
 \item{font.size}{font size of plot}
 
@@ -16,9 +17,15 @@
 \item{...}{arguments to be passed to methods}
 }
 \description{
-Projection pursuit regression tree plot
+projection pursuit regression tree plot
 }
 \details{
-plot projection pursuit regression tree structure
+Draw projection pursuit regression tree with tree structure. It is modified from a function in \code{party} library.
+}
+\examples{
+data(dataXY)
+Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
+plot(Model)
+
 }
 \keyword{tree}

@@ -103,8 +103,9 @@ pp_ggparty(Model, "lstat", final.rule = 4)
 pp_ggparty(Model, "lstat", final.rule = 5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" /> \###
-variable importance plot
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" />
+
+### variable importance plot
 
 By using the combination of the regression coefficient values of the
 projection values at each split node, the importance of the variables
@@ -186,7 +187,6 @@ PPregVarViz(Model,"lstat",indiv = TRUE)
 ```
 
 <img src="man/figures/README-unnamed-chunk-14-1.png" width="80%" />
-<<<<<<< HEAD
 
 ``` r
 PPregVarViz(Model,"chas",var.factor = TRUE)
@@ -255,7 +255,7 @@ decisionplot(Model, testObs = sample_one, method="simple",varImp = "shapImp",fin
 <img src="man/figures/README-unnamed-chunk-19-1.png" width="80%" />
 
 ``` r
-waterfallplot(Model, testObs = sample_one, method="simple", final.rule=4)
+waterfallplot(Model, testObs = sample_one, method="simple", final.rule=5)
 ```
 
 <img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
@@ -310,7 +310,6 @@ the larger the number of rooms, SHAP values increase.
 
 ``` r
 PPshapdependence(shap_long,x = "rm", color_feature = "lstat")
-#> Warning: Removed 2 rows containing missing values (geom_point).
 #> Warning: Removed 4 rows containing missing values (geom_smooth).
 ```
 
@@ -424,32 +423,7 @@ possible to extract 10 data from the data set whose final leaf is 1.
 
 ``` r
 class1s_obs <- SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 10) 
-class1s_obs 
-#> $df
-#>         crim zn indus chas   nox    rm   age    dis rad tax ptratio  black
-#> 415 45.74610  0  18.1    0 0.693 4.519 100.0 1.6582  24 666    20.2  88.27
-#> 381 88.97620  0  18.1    0 0.671 6.968  91.9 1.4165  24 666    20.2 396.90
-#> 390  8.15174  0  18.1    0 0.700 5.390  98.9 1.7281  24 666    20.2 396.90
-#> 393 11.57790  0  18.1    0 0.700 5.036  97.0 1.7700  24 666    20.2 396.90
-#> 455  9.51363  0  18.1    0 0.713 6.728  94.1 2.4961  24 666    20.2   6.68
-#> 440  9.39063  0  18.1    0 0.740 5.627  93.9 1.8172  24 666    20.2 396.90
-#> 406 67.92080  0  18.1    0 0.693 5.683 100.0 1.4254  24 666    20.2 384.97
-#> 452  5.44114  0  18.1    0 0.713 6.655  98.2 2.3552  24 666    20.2 355.29
-#> 432 10.06230  0  18.1    0 0.584 6.833  94.3 2.0882  24 666    20.2  81.33
-#> 426 15.86030  0  18.1    0 0.679 5.896  95.4 1.9096  24 666    20.2   7.68
-#>     lstat
-#> 415 36.98
-#> 381 17.21
-#> 390 20.85
-#> 393 25.68
-#> 455 18.71
-#> 440 22.88
-#> 406 22.98
-#> 452 17.73
-#> 432 19.69
-#> 426 24.39
-#> 
-#> $obs
+class1s_obs$obs 
 #>  [1] "415" "381" "390" "393" "455" "440" "406" "452" "432" "426"
 ```
 

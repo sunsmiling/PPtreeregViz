@@ -30,14 +30,14 @@ PPregVarViz<-function(PPTreeregOBJ,var.id,indiv=FALSE,
           dplyr::mutate(origclass = paste0("final leaf class : ",finalclass)) %>%
           ggplot2::ggplot(ggplot2::aes(x=X,y=Y,group=finalclass))+
           ggplot2::geom_point(ggplot2::aes(color=finalclass),
-                              position = ggplot2::position_jitterdodge(),
+                              position = ggplot2::position_jitterdodge(seed = 1),
                               show.legend = FALSE)+
           ggplot2::facet_wrap(~origclass,scale="free")+
           ggplot2::xlab(var.id)+ggplot2::theme_bw()
       } else {
         ggplot2::ggplot(plot.data,ggplot2::aes(x=X,y=Y,group=finalclass))+
           ggplot2::geom_point(ggplot2::aes(color=finalclass),
-                              position = ggplot2::position_jitterdodge(dodge.width = 0 ),
+                              position = ggplot2::position_jitterdodge(dodge.width = 0,seed = 1 ),
                               show.legend = FALSE)+
           ggplot2::geom_hline(yintercept=vlineY,
                               color="grey70",linetype=2)+

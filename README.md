@@ -4,6 +4,17 @@
 ## PPtreeregViz
 
 <!-- badges: start -->
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/r-lib/usethis/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-lib/usethis/actions/workflows/R-CMD-check.yaml)
+[![Codecov test
+coverage](https://codecov.io/gh/r-lib/usethis/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/usethis?branch=main)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/usethis)](https://CRAN.R-project.org/package=usethis)
+[![Lifecycle:
+stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/PPtreeregViz)](https://CRAN.R-project.org/package=PPtreeregViz)
 <!-- badges: end -->
 
 This package was developed to visualize the Projection Pursuit

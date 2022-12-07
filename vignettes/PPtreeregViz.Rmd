@@ -1,37 +1,37 @@
 ---
-output: github_document
+title: "Get started with `PPtreeregViz`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Get started with `PPtreeregViz`}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
 ---
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-",
   out.width = "80%"
 )
+```
+
+```{r setup}
+knitr::opts_chunk$set(include = FALSE)
+library(PPtreeregViz)
 library(ggplot2)
-library(MASS)
 library(dplyr)
 ```
 
-## PPtreeregViz
+## Introduction of PPtreeregViz
 
 <!-- badges: start -->
-<!-- badges: start -->
-[![R-CMD-check](https://github.com/r-lib/usethis/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/r-lib/usethis/actions/workflows/R-CMD-check.yaml)
-[![Codecov test coverage](https://codecov.io/gh/r-lib/usethis/branch/main/graph/badge.svg)](https://app.codecov.io/gh/r-lib/usethis?branch=main)
-[![CRAN status](https://www.r-pkg.org/badges/version/usethis)](https://CRAN.R-project.org/package=usethis)
-[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-[![CRAN status](https://www.r-pkg.org/badges/version/PPtreeregViz)](https://CRAN.R-project.org/package=PPtreeregViz)
 <!-- badges: end -->
 
 This package was developed to visualize the Projection Pursuit Regression Tree model <a href="https://www.mdpi.com/2076-3417/11/21/9885/pdf"></a> and add explanatory possibilities of the model using \code{XAI (eXplainable AI)} techniques. Since projection pursuit regression tree is based on tree method and grows using projection of input features, the model has excellent interpretability itself. By visualizing each node of this model, global analysis of the model is possible.  (This method is model-specific because it can only be used in the \code{PPTreereg} model.) Global interpretation using this method is possible, but it is difficult to interpret one observation because it goes through several projections. To overcome this, the developed \code{XAI} techniques were slightly modified to fit the structure of \code{PPTreereg} model. Using these visualization methods, it is possible to figure out how and what features have affected the model’s prediction. Through these processes, we can determine whether the model is trustworthy or not.
 
 
 ## Installation
-<a href='https://github.com/sunsmiling/PPtreeregViz'><img src="man/figures/logo.png" align="right" height="138.5"/></a>
+<a href='https://github.com/sunsmiling/PPtreeregViz'><img src="figures/logo.png" align="right" height="138.5"/></a>
 
 
 You can install the released version of  \code{PPtreeregViz} from CRAN with:
@@ -54,6 +54,7 @@ As an example, Boston house price data from the MASS library was used. In the fi
 The Boston data were divided into a train data set and a test data set at a ratio of 7:3. In particular, the first observation in the test data set was specifically selected as “sample_one”.
 
 ```{r}
+library(MASS)
 data("Boston")
 
 set.seed(1234)
@@ -190,104 +191,4 @@ waterfallplot(Model, testObs = sample_one, method="simple", final.rule=5)
 
 
 
-### Summary & Dependence plot 
-
-We would like to see how the entire SHAP values of train data move in the model, not the effect of one observation. Since this could be quiet computationally expensive, so it is calculated at once using \code{ppshapr_prep}.
-
-```{r}
-shap_long <- ppshapr_prep(Model, final.rule = 5, method = "simple") #takes about 4 minutes
-```
-
-The summary plot visualizes how the overall features of the training data affect the SHAP distribution. 
-For each final leaf, a red dot means that the feature value corresponding to that point has a high value. The yellow color means the middle value of the feature value, and the blue color has a lower feature value.
-For each leaf, features are sorted in descending order of the SHAP's variance. In all final leaves, rm, \code{lstat}, and tax had a great influence in determining the house price in common.
-
-```{r}
-PPshapsummary(data_long = shap_long)
-```
-
-
-Through the dependency plot, for each final leaf, the effect of the number of rooms on the house price can be seen. When the number of rooms was 6 or less, the number of rooms did not have a significant effect on the house price in the low house price (first final leaf), but the SHAP value had a negative value as the number of rooms decreased in the data corresponding to the top 25% of the house price. In other words, it can be interpreted that in an area with a low house price, when the number of rooms was small or average, it did not affect house price, but in an area with a high house price, a small number of rooms had a negative effect on the house price.
-
-```{r warning=FALSE}
-PPshapdependence(shap_long,x = "rm")
-```
-
-You can add color to see how it relates to other feature. As a result of specifying \code{lstat} as a color, it can be seen that the lower the \code{lstat} and the larger the number of rooms, SHAP values increase.
-
-```{r warning=FALSE}
-PPshapdependence(shap_long, x = "rm", color_feature = "lstat")
-```
-
-Next, as a result of examining \code{crim} and age, the higher \code{crim} contributed to the lower house price.
-
-```{r warning=FALSE}
-PPshapdependence(shap_long,x = "crim", color_feature = "age")
-```
-
-
-### Collaboration with other packages
-
-It can be collaborate with various \code{XAI-related packages} that have already been developed (\code{DALEX} and lime).
-If you use these package, you cannot see the characteristics of each final node, but you can see the results of the entire model. The following shows an example using the functions in the \code{DALEX} package.
-
-#### \code{DALEX}
-
-```{r warning=FALSE}
-library("DALEX")
-new_explainer <- explain_PP(PPTreeregOBJ = Model, data = sample_train[,-14], 
-                            y = sample_train[,14], final.rule = 4)
-```
-
-
-```{r}
-DALEX::model_performance(new_explainer)
-```
-
-
-```{r}
-DALEX::model_performance(new_explainer) %>% plot()
-```
-
-
-```{r}
-DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
-```
-
-
-```{r}
-DALEX::model_profile(new_explainer, variables = "rm") %>%
-  plot(geom="profiles")
-```
-
-
-```{r}
-DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
-```
-
-
-
-#### lime package
-
-```{r warning=FALSE}
-PP_model <- caret::train(medv ~., data = sample_train,
-                         method = PPTreereg.M5 ,
-                         DEPTH=2,
-                         PPmethod="LDA")
-
-lime_explainer <- lime::lime(sample_train[,-14], PP_model)
-```
-
-In order to check whether the created model works well, it is important to apply it to multiple instances. We implemented the \code{Submodular Pick} algorithm in ['LIME']<a href="https://arxiv.org/abs/1602.04938"></a> , which presented the methodology for which instance to choose. It was possible to extract 10 data from the data set whose final leaf is 1.
-
-### \code{submodular Pick}
-```{r}
-class1s_obs <- SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 10) 
-class1s_obs$obs 
-
-```
-
-```{r fig.height=5, fig.width=5, warning=FALSE}
-decisionplot(Model, testObs = class1s_obs$df , method="simple",varImp = "shapImp",final.rule=5)
-```
 

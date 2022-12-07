@@ -17,8 +17,9 @@ Load \code{PPTreereg} Models to train
 Load \code{PPTreereg} models to make explanation with caret package.
 }
 \examples{
+\donttest{
 data(dataXY)
 PP_model <- caret::train(Y ~., data = dataXY, method = PPTreereg.M3, DEPTH=2, PPmethod="LDA")
-
+}
 }
 \keyword{datasets}

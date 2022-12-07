@@ -23,10 +23,11 @@ The summary plot summarizes information about the independent variables that con
 in the training data in the form of a density plot.
 }
 \examples{
+\donttest{
 data(dataXY)
 testX <- dataXY[1,-1]
 Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
 shap_long <- ppshapr_prep(Model, final.rule =5, method="simple")
 PPshapsummary(shap_long)
-
+}
 }

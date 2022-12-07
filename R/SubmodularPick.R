@@ -25,12 +25,13 @@
 #'
 #' @keywords submodular
 #' @examples
+#' \donttest{
 #' data(dataXY)
 #' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
 #' PP_model <- caret::train(Y~., data = dataXY, method = PPTreereg.M3, DEPTH=2, PPmethod="LDA")
 #' lime_explainer <- lime::lime(dataXY[,-1],PP_model)
-#' SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 5)
-#'
+#' SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 3)
+#'}
 
 SubPick_PPTreereg <- function(PPTreeregOBJ, explainer, chooseClass, obsnum =1,... ){
   case = BIN=1

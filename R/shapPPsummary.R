@@ -11,12 +11,13 @@
 #' @return An object of the class \code{ggplot}
 #'
 #' @examples
+#' \donttest{
 #' data(dataXY)
 #' testX <- dataXY[1,-1]
 #' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)
 #' shap_long <- ppshapr_prep(Model, final.rule =5, method="simple")
 #' PPshapsummary(shap_long)
-#'
+#'}
 PPshapsummary <- function(data_long,...){
   value <- variable<- stdfvalue <- finalLeaf <- NULL # due to NSE notes in R CMD check
 

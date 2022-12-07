@@ -5,9 +5,10 @@
 #' @export
 #' @import caret
 #' @examples
+#' \donttest{
 #' data(dataXY)
 #' PP_model <- caret::train(Y ~., data = dataXY, method = PPTreereg.M3, DEPTH=2, PPmethod="LDA")
-#'
+#'}
 PPTreereg.M3 <- list(label = "Projection Pursuit Regression Tree",
                      library = "PPtreeregViz",
                      type = "Regression",

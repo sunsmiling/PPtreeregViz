@@ -17,8 +17,25 @@ NeedsCompilation: yes
 Repository: CRAN
 Date: 2022-12-05
 Imports: Rcpp, data.table, DALEX, lime, shapr, ggplot2, dplyr, tidyr, tibble, PPtreeViz, reshape2, magrittr, utils, caret
-Suggests: testthat, gridExtra, grid, ggExtra, partykit, ggparty, progress, tidyselect, 
-    ggforce, waterfalls, forcats, RColorBrewer, gtable, knitr, rmarkdown, MASS
+Suggests: 
+    testthat (>= 3.0.0),
+    gridExtra,
+    grid,
+    ggExtra,
+    partykit,
+    ggparty,
+    progress,
+    tidyselect,
+    ggforce,
+    waterfalls,
+    forcats,
+    RColorBrewer,
+    gtable,
+    knitr,
+    rmarkdown,
+    MASS,
+    covr
 LinkingTo: Rcpp, RcppArmadillo
 VignetteBuilder: knitr
 URL: https://github.com/sunsmiling/PPtreeregViz
+Config/testthat/edition: 3

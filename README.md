@@ -5,11 +5,12 @@
 
 <!-- badges: start -->
 
-[![R-CMD-check](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/check-standard.yaml/badge.svg)](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/check-standard.yaml)
+[![R-CMD-check](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/PPtreeregViz)](https://CRAN.R-project.org/package=PPtreeregViz)
+[![R-CMD-check](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This package was developed to visualize the Projection Pursuit

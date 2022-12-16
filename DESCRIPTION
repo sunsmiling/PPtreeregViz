@@ -1,6 +1,6 @@
 Package: PPtreeregViz
 Title: Projection Pursuit Regression Tree Visualization 
-Version: 1.0.2
+Version: 2.0.2
 Authors@R: c(person("Eun-Kyung", "Lee", role=c("aut")),
 	     person("HyunSun", "Cho", role=c("aut", "cre"), email = "sunsmiling@naver.com"))
 Maintainer: HyunSun Cho <sunsmiling@naver.com>
@@ -16,7 +16,7 @@ Depends: R (>= 4.0.0)
 NeedsCompilation: yes
 Repository: CRAN
 Date: 2022-12-05
-Imports: Rcpp, data.table, DALEX, lime, shapr, ggplot2, dplyr, tidyr, tibble, PPtreeViz, reshape2, magrittr, utils, caret
+Imports: Rcpp, data.table, DALEX, shapr, ggplot2, dplyr, tidyr, tibble, PPtreeViz, reshape2, magrittr, utils
 Suggests: 
     testthat (>= 3.0.0),
     gridExtra,

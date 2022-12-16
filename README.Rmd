@@ -224,6 +224,30 @@ PPshapdependence(shap_long,x = "crim", color_feature = "age")
 ```
 
 
+### \code{submodular Pick}
+
+```{r}
+pick_obs_1 <- subpick(shap_long,final.leaf = 1, obsnum = 10)
+pick_obs_4 <- subpick(shap_long,final.leaf = 4, obsnum = 10)
+```
+
+```{r}
+subpick(shap_long,final.leaf =1, obsnum = 5)
+```
+
+```{r fig.height=3, fig.width=3}
+decisionplot(Model, testObs = pick_obs_1$df ,
+             method="simple",
+             varImp = "shapImp",final.rule = 5, Yrange = TRUE)
+
+
+
+decisionplot(Model, testObs = pick_obs_4$df ,
+             method="simple",
+             varImp = "shapImp",final.rule = 5, Yrange = FALSE)
+
+```
+
 ### Collaboration with other packages
 
 It can be collaborate with various \code{XAI-related packages} that have already been developed (\code{DALEX} and lime).
@@ -263,29 +287,4 @@ DALEX::model_profile(new_explainer, variables = "rm") %>%
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
 ```
 
-
-
-#### lime package
-
-```{r warning=FALSE}
-PP_model <- caret::train(medv ~., data = sample_train,
-                         method = PPTreereg.M5 ,
-                         DEPTH=2,
-                         PPmethod="LDA")
-
-lime_explainer <- lime::lime(sample_train[,-14], PP_model)
-```
-
-In order to check whether the created model works well, it is important to apply it to multiple instances. We implemented the \code{Submodular Pick} algorithm in ['LIME']<a href="https://arxiv.org/abs/1602.04938"></a> , which presented the methodology for which instance to choose. It was possible to extract 10 data from the data set whose final leaf is 1.
-
-### \code{submodular Pick}
-```{r}
-class1s_obs <- SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 10) 
-class1s_obs$obs 
-
-```
-
-```{r fig.height=5, fig.width=5, warning=FALSE}
-decisionplot(Model, testObs = class1s_obs$df , method="simple",varImp = "shapImp",final.rule=5)
-```
 

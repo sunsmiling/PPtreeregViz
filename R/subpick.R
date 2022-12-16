@@ -1,10 +1,24 @@
-#' subpick
+#' Pick several data containing various information for each final node for \code{PPTreereg}
+
+#' \code{submodular} Pick (\code{SP-LIME}) was developed (Ribeiro et al., 2016) to selects
+#' representative data with important information to determine the
+#' reliability of model based on the \code{LIME} algorithm.
+#' In order to extract data for each final node in the \code{PPTreereg} model,
+#'  \code{PP SP-LIME} was proposed based on \code{SP-LIME}.
+
+#' @title projection pursuit \code{submodular} pick algorithm \code{PP SP-LIME}
+#' @usage subpick(data_long, final.leaf, obsnum = 5)
+#' @param data_long \code{ppshapr_prep} class object.
+#' @param final.leaf location of final leaf
+#' @param obsnum The number of budgets (instance to be selected). Default value is 1.
 #'
-#' @param data_long
-#' @param final.leaf
-#' @param obsnum
-#'
-#' @return
+#' @return Observation names and their original values as data
+#' @references
+#' Ribeiro, Marco Tulio, Sameer Singh, and Carlos Guestrin.
+#' "" Why should i trust you?" Explaining the predictions of any classifier." Proceedings of the 22nd ACM SIGKDD international conference on knowledge discovery and data mining. 2016.
+#' \doi{10.1145/2939672.2939778}
+#' \url{https://github.com/marcotcr/lime/blob/master/lime/submodular_pick.py}
+#' @keywords submodular
 #' @export
 #'
 #' @examples
@@ -16,7 +30,7 @@
 #'
 
 subpick <- function(data_long,final.leaf, obsnum = 5){
-
+  variable <- id <- finalLeaf <- ..feature_dict <- NULL # due to NSE notes in R CMD check
   feature_dict = levels(data_long[,variable])
   d_prime = length(feature_dict)
 
@@ -32,7 +46,7 @@ subpick <- function(data_long,final.leaf, obsnum = 5){
   importance = sqrt(colSums(abs(W)))
 
   # NoW1 run the SP-LIME greedy algorithm
-  remaining_indices = 1:sample_size
+  remaining_indices = W_[,id]
   remaining_indices = remaining_indices[!duplicated(remaining_indices)]
 
   V <- c()
@@ -44,8 +58,7 @@ subpick <- function(data_long,final.leaf, obsnum = 5){
     current = 0
 
     for (j in remaining_indices){
-      current = sum(abs(W)[c(V,j),]*importance)
-      #current = sum(abs(W)[c(V,j),])
+      current = sum(abs(W_)[id %in% c(V,j),..feature_dict]*importance)
       if(current >= best){
         best = current
         best_ind = j}

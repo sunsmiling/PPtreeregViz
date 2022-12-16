@@ -6,13 +6,10 @@
 <!-- badges: start -->
 
 [![R-CMD-check](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/sunsmiling/PPtreeregViz/actions/workflows/R-CMD-check.yaml)
-[![Codecov test
-coverage](https://codecov.io/gh/sunsmiling/PPtreeregViz/branch/master/graph/badge.svg)](https://codecov.io/gh/sunsmiling/PPtreeregViz)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/PPtreeregViz)](https://CRAN.R-project.org/package=PPtreeregViz)
 [![Lifecycle:
 stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
-
 <!-- badges: end -->
 
 This package was developed to visualize the Projection Pursuit
@@ -325,6 +322,8301 @@ PPshapdependence(shap_long,x = "crim", color_feature = "age")
 
 <img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
 
+### 
+
+``` r
+pick_obs_1 <- subpick(shap_long,final.leaf = 1, obsnum = 10)
+#> Warning in `[.data.table`(W_, , ..feature_dict): Both 'feature_dict' and
+#> '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+#> Warning in `[.data.table`(origdata_, , ..feature_dict): Both 'feature_dict'
+#> and '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+pick_obs_4 <- subpick(shap_long,final.leaf = 4, obsnum = 10)
+#> Warning in `[.data.table`(W_, , ..feature_dict): Both 'feature_dict' and
+#> '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+#> Warning in `[.data.table`(origdata_, , ..feature_dict): Both 'feature_dict'
+#> and '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+```
+
+``` r
+subpick(shap_long,final.leaf =1, obsnum = 5)
+#> Warning in `[.data.table`(W_, , ..feature_dict): Both 'feature_dict' and
+#> '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+
+#> Warning in `[.data.table`(abs(W_), id %in% c(V, j), ..feature_dict): Both
+#> 'feature_dict' and '..feature_dict' exist in calling scope. Please remove the
+#> '..feature_dict' variable in calling scope for clarity.
+#> Warning in `[.data.table`(origdata_, , ..feature_dict): Both 'feature_dict'
+#> and '..feature_dict' exist in calling scope. Please remove the '..feature_dict'
+#> variable in calling scope for clarity.
+#> $df
+#>        crim zn indus chas   nox    rm   age    dis rad tax ptratio  black lstat
+#> 1: 67.92080  0 18.10    0 0.693 5.683 100.0 1.4254  24 666    20.2 384.97 22.98
+#> 2:  0.25387  0  6.91    0 0.448 5.399  95.3 5.8700   3 233    17.9 396.90 30.81
+#> 3:  1.41385  0 19.58    1 0.871 6.129  96.0 1.7494   5 403    14.7 321.02 15.12
+#> 4:  1.13081  0  8.14    0 0.538 5.713  94.1 4.2330   4 307    21.0 360.17 22.60
+#> 5:  4.54192  0 18.10    0 0.770 6.398  88.0 2.5182  24 666    20.2 374.56  7.79
+#> 
+#> $obs
+#> [1]   3  62  97 186 230
+```
+
+``` r
+decisionplot(Model, testObs = pick_obs_1$df ,
+             method="simple",
+             varImp = "shapImp",final.rule = 5, Yrange = TRUE)
+```
+
+<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
+
+``` r
+
+
+
+decisionplot(Model, testObs = pick_obs_4$df ,
+             method="simple",
+             varImp = "shapImp",final.rule = 5, Yrange = FALSE)
+```
+
+<img src="man/figures/README-unnamed-chunk-28-2.png" width="80%" />
+
 ### Collaboration with other packages
 
 It can be collaborate with various that have already been developed (
@@ -377,55 +8669,23 @@ DALEX::model_performance(new_explainer)
 DALEX::model_performance(new_explainer) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-32-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>%
   plot(geom="profiles")
 ```
 
-<img src="man/figures/README-unnamed-chunk-30-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-33-1.png" width="80%" />
 
 ``` r
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
-```
-
-<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />
-
-#### lime package
-
-``` r
-PP_model <- caret::train(medv ~., data = sample_train,
-                         method = PPTreereg.M5 ,
-                         DEPTH=2,
-                         PPmethod="LDA")
-#> 필요한 패키지를 로딩중입니다: lattice
-
-lime_explainer <- lime::lime(sample_train[,-14], PP_model)
-```
-
-In order to check whether the created model works well, it is important
-to apply it to multiple instances. We implemented the algorithm in
-\[‘LIME’\]<a href="https://arxiv.org/abs/1602.04938"></a> , which
-presented the methodology for which instance to choose. It was possible
-to extract 10 data from the data set whose final leaf is 1.
-
-### 
-
-``` r
-class1s_obs <- SubPick_PPTreereg(Model, lime_explainer, "class1", obsnum = 10) 
-class1s_obs$obs 
-#>  [1] "381" "455" "420" "452" "436" "451" "412" "432" "393" "143"
-```
-
-``` r
-decisionplot(Model, testObs = class1s_obs$df , method="simple",varImp = "shapImp",final.rule=5)
 ```
 
 <img src="man/figures/README-unnamed-chunk-34-1.png" width="80%" />

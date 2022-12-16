@@ -19,15 +19,6 @@
     <loc>/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/PPTreereg.M3.html</loc>
-  </url>
-  <url>
-    <loc>/reference/PPTreereg.M4.html</loc>
-  </url>
-  <url>
-    <loc>/reference/PPTreereg.M5.html</loc>
-  </url>
-  <url>
     <loc>/reference/PPTreereg.html</loc>
   </url>
   <url>
@@ -44,9 +35,6 @@
   </url>
   <url>
     <loc>/reference/PPshapsummary.html</loc>
-  </url>
-  <url>
-    <loc>/reference/SubPick_PPTreereg.html</loc>
   </url>
   <url>
     <loc>/reference/dataXY.html</loc>
@@ -95,6 +83,9 @@
   </url>
   <url>
     <loc>/reference/shapley_weights.html</loc>
+  </url>
+  <url>
+    <loc>/reference/subpick.html</loc>
   </url>
   <url>
     <loc>/reference/summary.PPTreereg.html</loc>

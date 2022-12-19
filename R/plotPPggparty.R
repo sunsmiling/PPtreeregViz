@@ -26,7 +26,6 @@
 #' @param ... arguments to be passed to methods
 #' @export
 #' @keywords tree
-#'
 #' @return An object of the class \code{ggplot}
 #'
 #' @examples

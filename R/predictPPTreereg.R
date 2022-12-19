@@ -25,6 +25,7 @@
 #' @param classinfo return final node information. Default value is FALSE
 #' @param ... arguments to be passed to methods
 #' @aliases predict
+#' @return Numeric
 #' @export
 #' @keywords tree
 #' @examples

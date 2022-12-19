@@ -16,6 +16,9 @@
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+plot object
+}
 \description{
 projection pursuit regression tree plot
 }

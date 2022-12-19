@@ -29,6 +29,9 @@
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+tree print
+}
 \description{
 Print PP.Tree.reg result
 }

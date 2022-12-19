@@ -9,6 +9,7 @@
 #' @param verbose print if TRUE, no output if FALSE
 #' @param final.rule rule to calculate the final node value
 #' @param ... arguments to be passed to methods
+#' @return tree print
 #' @export
 #' @keywords tree
 print.PPTreereg<-function(x,tree.print=TRUE,coef.print=FALSE,

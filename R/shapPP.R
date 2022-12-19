@@ -1,8 +1,19 @@
 #' weight_matrix
 #'
+#' The original source for much of this came from 'shapr' package
+#' code in github.com/NorskRegnesentral/shapr/blob/master/R/shapley.R
+#' Below is the original license statement for 'shapr' package.
+#'
+#' MIT License
+#' Copyright (c) 2019 Norsk Regnesentral
+#' Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#' The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#'
 #' @param X X
 #' @param normalize_W_weights default is TRUE
 #' @author Nikolai Sellereite
+#' @return Numeric matrix
 #' @references The \code{shapr} package developed by
 #' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
 #' \doi{10.1016/j.artint.2021.103502} and modified some codes at
@@ -29,9 +40,22 @@ weight_matrix <- function(X, normalize_W_weights = TRUE) {
 
 #' feature_exact
 #'
-#' @param m m
+#' The original source for much of this came from 'shapr' package
+#' code in github.com/NorskRegnesentral/shapr/blob/master/R/features.R
+#'
+#' Below is the original license statement for 'shapr' package.
+#'
+#' MIT License
+#' Copyright (c) 2019 Norsk Regnesentral
+#' Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#' The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#'
+#'
+#' @param m List. Contains vector of integers indicating the feature numbers for the different groups.
 #' @param weight_zero_m  weight_zero_m
 #' @author Nikolai Sellereite
+#' @return A data.table with all feature group combinations, shapley weights etc.
 #' @references The \code{shapr} package developed by
 #' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
 #' \doi{10.1016/j.artint.2021.103502} and modified some codes at
@@ -52,10 +76,21 @@ feature_exact <- function(m, weight_zero_m = 10^6) {
 
 #' shapley_weights
 #'
+#'  The original source for much of this came from 'shapr' package
+#' code in github.com/NorskRegnesentral/shapr/blob/master/R/shapley.R
+#' Below is the original license statement for 'shapr' package.
+#'
+#' MIT License
+#' Copyright (c) 2019 Norsk Regnesentral
+#' Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#' The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#'
 #' @param m m
 #' @param N N
 #' @param n_components n_components
 #' @param weight_zero_m weight_zero_m
+#' @return Numeric
 #' @author Nikolai Sellereite
 #' @references The \code{shapr} package developed by
 #' Nikolai Sellereite, Martin Jullum, Annabelle Redelmeier, Norsk Regnesentral.
@@ -70,6 +105,20 @@ shapley_weights <- function(m, N, n_components, weight_zero_m = 10^6) {
 
 #' Calculate \code{PPKernelSHAP} values with simple methods
 #'
+#' This function should only be called internally, and not be used as
+#' a stand-alone function.
+#' The original source for much of this came from 'shapr' package
+#' code in github.com/NorskRegnesentral/shapr/blob/master/R/predictions.R
+#'
+#' Below is the original license statement for 'shapr' package.
+#'
+#' MIT License
+#' Copyright (c) 2019 Norsk Regnesentral
+#' Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#' The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#'
+#'
 #' @param PPTreeregOBJ PPTreereg class object - a model to be explained
 #' @param testObs test data observation
 #' @param final.rule final rule to assign numerical values in the final nodes.
@@ -79,6 +128,7 @@ shapley_weights <- function(m, N, n_components, weight_zero_m = 10^6) {
 #'             4: using all independent variables
 #'             5: using several significant independent variables
 #' @param final.leaf location of final leaf
+#' @return List of simple methods and model values
 #'
 ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL){
   origclass <- id_combination <- leafid <- p_hat <- finalLeaf <-  NULL # due to NSE notes in R CMD check
@@ -146,7 +196,6 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
   # Predictions
   prediction_zero = predict.PPTreereg(PPTreeregOBJ,PPTreeregOBJ$class.origX.mean,final.rule = finalRule)
   dt[id_combination != 1, p_hat := predict.PPTreereg(PPTreeregOBJ,newdata = .SD,final.rule = finalRule), .SDcols = feature_names]
-  #dt[id_combination != 1, ':='(p_hat = predict.PPTreereg(PPTreeregOBJ,newdata = .SD,final.rule = finalRule)), .SDcols = feature_names]
   dt[id_combination == 1, p_hat := prediction_zero]
 
   p_all <- unique(dt[id_combination == max(id_combination), p_hat])
@@ -187,6 +236,20 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
 
 #' Calculate \code{PPKernelSHAP} values with empirical methods
 #'
+#' This function should only be called internally, and not be used as
+#' a stand-alone function.
+#' The original source for much of this came from 'shapr' package
+#' code in github.com/NorskRegnesentral/shapr/blob/master/R/predictions.R
+#'
+#' Below is the original license statement for 'shapr' package.
+#'
+#' MIT License
+#' Copyright (c) 2019 Norsk Regnesentral
+#' Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+#' The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#' THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+#'
+#'
 #' @param PPTreeregOBJ PPTreereg class object - a model to be explained
 #' @param testObs test data observation
 #' @param final.rule final rule to assign numerical values in the final nodes.
@@ -196,6 +259,7 @@ ppshapr.simple <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL)
 #'             4: using all independent variables
 #'             5: using several significant independent variables
 #' @param final.leaf location of final leaf
+#' @return List of empirical methods and model values
 #'
 ppshapr.empirical <- function(PPTreeregOBJ, testObs, final.rule, final.leaf = NULL){
   origclass <- id_combination <- leafid <- V1 <- p_hat <- finalLeaf <- keep <- NULL # due to NSE notes in R CMD check

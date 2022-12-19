@@ -42,6 +42,9 @@
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+Numeric
+}
 \description{
 predict projection pursuit regression tree
 }

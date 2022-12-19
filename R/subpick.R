@@ -30,7 +30,7 @@
 #'
 
 subpick <- function(data_long,final.leaf, obsnum = 5){
-  variable <- id <- finalLeaf <- ..feature_dict <- NULL # due to NSE notes in R CMD check
+  variable <- id <- finalLeaf <- feature_dict <- NULL # due to NSE notes in R CMD check
   feature_dict = levels(data_long[,variable])
   d_prime = length(feature_dict)
 
@@ -40,7 +40,7 @@ subpick <- function(data_long,final.leaf, obsnum = 5){
   W_ = data.table::dcast(data_long_f, finalLeaf+id ~variable, value.var = "value")
   sample_size = length(unique(W_[,id]))
 
-  W <- W_[,..feature_dict]
+  W <- W_[,feature_dict, with=FALSE]
 
   # Create the global importance vector, I_j described in the paper
   importance = sqrt(colSums(abs(W)))
@@ -58,7 +58,7 @@ subpick <- function(data_long,final.leaf, obsnum = 5){
     current = 0
 
     for (j in remaining_indices){
-      current = sum(abs(W_)[id %in% c(V,j),..feature_dict]*importance)
+      current = sum(abs(W_)[id %in% c(V,j),feature_dict, with=FALSE]*importance)
       if(current >= best){
         best = current
         best_ind = j}
@@ -70,7 +70,7 @@ subpick <- function(data_long,final.leaf, obsnum = 5){
 
   origdata_ = data.table::dcast(data_long_f[id %in% V_], finalLeaf+id ~variable,value.var = "rfvalue")
 
-  result <- list(df = origdata_[,..feature_dict], obs= V_)
+  result <- list(df = origdata_[,feature_dict, with=FALSE], obs= V_)
 
   return(result)
 }

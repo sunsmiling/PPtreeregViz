@@ -1,3 +1,14 @@
+# PPtreeregViz 2.0.3
+---
+* minor code fixes in 'subpick()' 
+removed the '..feature_dict' variable in calling scope for clarity.
+
+* Added all missing Rd-tags regarding exported methods and explain
+the functions results in the documentation.
+
+* Add all authors, contributors and copyright holders in the
+Authors@R field with the appropriate roles.
+
 # PPtreeregViz 2.0.2
 ---
 This is a major release adding a range of substantial new features and fixing a large number of bugs.

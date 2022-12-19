@@ -9,6 +9,7 @@
 #' @export
 #' @aliases plot
 #' @keywords tree
+#' @return plot object
 #' @examples
 #' data(dataXY)
 #' Model <- PPTreereg(Y~., data = dataXY, DEPTH = 2)

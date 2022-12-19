@@ -224,7 +224,8 @@ PPshapdependence(shap_long,x = "crim", color_feature = "age")
 ```
 
 
-### \code{submodular Pick}
+### Submodular Pick for Projection pursuit regression Tree
+
 
 ```{r}
 pick_obs_1 <- subpick(shap_long,final.leaf = 1, obsnum = 10)

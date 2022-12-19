@@ -12,7 +12,7 @@ Authors@R: c(
 Maintainer: HyunSun Cho <sunsmiling@naver.com>
 Description: It was developed as a tools for exploring 'PPTreereg' (Projection Pursuit TREE of REGression). 
   It uses various projection pursuit indexes and 'XAI' (eXplainable Artificial Intelligence) methods to help understand 
-  the model by finding connections between the input variables and outputs of model. The 'KernelSHAP' calculation algorithm
+  the model by finding connections between the input variables and outputs of model. The 'KernelSHAP' calculatioin algoritm
   from Aas, Jullum and Løland (2019) <arXiv:1903.10464> was modified to fit this model, 
   and some codes has been modified from the 'shapr' package created by Sellereite, Nikolai, and Martin Jullum (2020) <doi:10.21105/joss.02027>.
   The implemented methods help to explore the model at the single instance level as well as at the whole dataset level.

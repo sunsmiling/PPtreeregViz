@@ -65,18 +65,18 @@ sample_one <- sample_test[sample(1:nrow(sample_test),1),-14]
 ## Build Model & Plot Model itself
 
 Create a \code{PPTreereg} model with Depth as 2 for ease of visualization and interpretation.
-```{r}
+```{r modeling}
 library(PPtreeregViz)
 Model <- PPtreeregViz::PPTreereg(medv ~., data = sample_train, DEPTH = 2)
 ```
 
-```{r fig.height=5, fig.width=7}
+```{r treeplot, fig.height=5, fig.width=7}
 plot(Model)
 ```
 
 Through `pp_ggparty`, marginal predicted values and actual values are drawn according to independent variables for each final node. In the group with the lower 25% of house prices, \code{lstat}(lower status of the population (percent)) had a wide range from 10 to 30, but in the group with the top 25%, \code{lstat} had only values less than 15.
 
-```{r fig.height=5, fig.width=7}
+```{r pp_ggparty, fig.height=5, fig.width=7}
 pp_ggparty(Model, "lstat", final.rule = 1)
 ```
 

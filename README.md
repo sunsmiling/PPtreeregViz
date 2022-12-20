@@ -83,7 +83,7 @@ Model <- PPtreeregViz::PPTreereg(medv ~., data = sample_train, DEPTH = 2)
 plot(Model)
 ```
 
-<img src="man/figures/README-unnamed-chunk-4-1.png" width="80%" />
+<img src="man/figures/README-treeplot-1.png" width="80%" />
 
     #> NULL
 
@@ -97,19 +97,19 @@ with the top 25%, had only values less than 15.
 pp_ggparty(Model, "lstat", final.rule = 1)
 ```
 
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="80%" />
+<img src="man/figures/README-pp_ggparty-1.png" width="80%" />
 
 ``` r
 pp_ggparty(Model, "lstat", final.rule = 4)
 ```
 
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="80%" />
 
 ``` r
 pp_ggparty(Model, "lstat", final.rule = 5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="80%" />
 
 ### variable importance plot
 
@@ -129,7 +129,7 @@ Tree.Imp <- PPimportance(Model)
 plot(Tree.Imp)
 ```
 
-<img src="man/figures/README-unnamed-chunk-8-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="80%" />
 
 If you use some arguments such as `marginal = TRUE` and `num_var`, you
 can see the desired number of marginal variable importance of the whole
@@ -139,7 +139,7 @@ rather than each final leaf.
 plot(Tree.Imp, marginal = TRUE, num_var = 5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-9-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="80%" />
 
 ### Node visualization
 
@@ -153,14 +153,14 @@ combination of independent variables.
 PPregNodeViz(Model, node.id = 1)
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="80%" />
 
 ``` r
 PPregNodeViz(Model, node.id = 4)
 #> Warning: Removed 2 rows containing missing values (`geom_point()`).
 ```
 
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-8-1.png" width="80%" />
 
 4th final leaf’s node id is 7.
 
@@ -169,7 +169,7 @@ PPregNodeViz(Model,node.id = 7)
 #> Warning: Removed 2 rows containing missing values (`geom_point()`).
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-9-1.png" width="80%" />
 
 ### Variable visualization
 
@@ -183,26 +183,26 @@ PPregVarViz(Model,"lstat")
 #> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-13-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="80%" />
 
 ``` r
 PPregVarViz(Model,"lstat",indiv = TRUE)
 #> `geom_smooth()` using method = 'loess' and formula = 'y ~ x'
 ```
 
-<img src="man/figures/README-unnamed-chunk-14-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-11-1.png" width="80%" />
 
 ``` r
 PPregVarViz(Model,"chas",var.factor = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-15-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="80%" />
 
 ``` r
 PPregVarViz(Model,"chas",indiv = TRUE, var.factor = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-16-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-13-1.png" width="80%" />
 
 ## Using  method
 
@@ -254,13 +254,13 @@ two ways. `decisionplot` and `waterfallplot`.
 decisionplot(Model, testObs = sample_one, method="simple",varImp = "shapImp",final.rule=5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-19-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-16-1.png" width="80%" />
 
 ``` r
 waterfallplot(Model, testObs = sample_one, method="simple", final.rule=5)
 ```
 
-<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-17-1.png" width="80%" />
 
 ### Summary & Dependence plot
 
@@ -284,7 +284,7 @@ tax had a great influence in determining the house price in common.
 PPshapsummary(data_long = shap_long)
 ```
 
-<img src="man/figures/README-unnamed-chunk-22-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-19-1.png" width="80%" />
 
 Through the dependency plot, for each final leaf, the effect of the
 number of rooms on the house price can be seen. When the number of rooms
@@ -301,7 +301,7 @@ effect on the house price.
 PPshapdependence(shap_long,x = "rm")
 ```
 
-<img src="man/figures/README-unnamed-chunk-23-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-20-1.png" width="80%" />
 
 You can add color to see how it relates to other feature. As a result of
 specifying as a color, it can be seen that the lower the and the larger
@@ -311,7 +311,7 @@ the number of rooms, SHAP values increase.
 PPshapdependence(shap_long, x = "rm", color_feature = "lstat")
 ```
 
-<img src="man/figures/README-unnamed-chunk-24-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-21-1.png" width="80%" />
 
 Next, as a result of examining and age, the higher contributed to the
 lower house price.
@@ -320,13 +320,12 @@ lower house price.
 PPshapdependence(shap_long,x = "crim", color_feature = "age")
 ```
 
-<img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-22-1.png" width="80%" />
 
 ### Submodular Pick for Projection pursuit regression Tree
 
 ``` r
 pick_obs_1 <- subpick(shap_long,final.leaf = 1, obsnum = 10)
-
 pick_obs_4 <- subpick(shap_long,final.leaf = 4, obsnum = 10)
 ```
 
@@ -350,7 +349,7 @@ decisionplot(Model, testObs = pick_obs_1$df ,
              varImp = "shapImp",final.rule = 5, Yrange = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
 
 ``` r
 
@@ -361,7 +360,7 @@ decisionplot(Model, testObs = pick_obs_4$df ,
              varImp = "shapImp",final.rule = 5, Yrange = FALSE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-28-2.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-25-2.png" width="80%" />
 
 ### Collaboration with other packages
 
@@ -415,23 +414,23 @@ DALEX::model_performance(new_explainer)
 DALEX::model_performance(new_explainer) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-32-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>%
   plot(geom="profiles")
 ```
 
-<img src="man/figures/README-unnamed-chunk-33-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-30-1.png" width="80%" />
 
 ``` r
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-34-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />

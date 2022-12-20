@@ -358,7 +358,7 @@ decisionplot(Model, testObs = pick_obs_1$df ,
 
 decisionplot(Model, testObs = pick_obs_4$df ,
              method="simple",
-             varImp = "shapImp",final.rule = 5, Yrange = FALSE)
+             varImp = "shapImp",final.rule = 5, Yrange = TRUE)
 ```
 
 <img src="man/figures/README-decisionplot-2.png" width="80%" />

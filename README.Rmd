@@ -59,6 +59,7 @@ proportion = 0.7
 idx_train = sample(1:nrow(Boston), size = round(proportion * nrow(Boston)))
 sample_train = Boston[idx_train, ]
 sample_test =  Boston[-idx_train, ]
+set.seed(1234)
 sample_one <- sample_test[sample(1:nrow(sample_test),1),-14]
 ```
 
@@ -236,7 +237,7 @@ pick_obs_4 <- subpick(shap_long,final.leaf = 4, obsnum = 10)
 subpick(shap_long,final.leaf =1, obsnum = 5)
 ```
 
-```{r fig.height=3, fig.width=3}
+```{r decisionplot}
 decisionplot(Model, testObs = pick_obs_1$df ,
              method="simple",
              varImp = "shapImp",final.rule = 5, Yrange = TRUE)

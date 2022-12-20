@@ -66,6 +66,7 @@ proportion = 0.7
 idx_train = sample(1:nrow(Boston), size = round(proportion * nrow(Boston)))
 sample_train = Boston[idx_train, ]
 sample_test =  Boston[-idx_train, ]
+set.seed(1234)
 sample_one <- sample_test[sample(1:nrow(sample_test),1),-14]
 ```
 
@@ -217,8 +218,8 @@ used.
 
 ``` r
 sample_one
-#>        crim zn indus chas  nox   rm  age    dis rad tax ptratio  black lstat
-#> 177 0.07022  0  4.05    0 0.51 6.02 47.2 3.5549   5 296    16.6 393.23 10.11
+#>       crim zn indus chas   nox    rm  age    dis rad tax ptratio black lstat
+#> 81 0.04113 25  4.86    0 0.426 6.727 33.5 5.4007   4 281      19 396.9  5.29
 ```
 
 Since the `empirical` method, which is a more accurate calculation
@@ -227,12 +228,12 @@ which is an estimate of this value, was used.
 
 ``` r
 ppshapr.simple(PPTreeregOBJ = Model, testObs = sample_one, final.rule = 5)$dt
-#>        none         crim           zn       indus        chas           nox
-#> 1: 23.25114 -0.008369025 -0.007357408 0.009685125 -0.00178154 -0.0002517925
-#>              rm        age        dis          rad         tax     ptratio
-#> 1: -0.008369025 0.06894799 0.04018246 -0.006113893 0.009685125 0.009685125
-#>           black       lstat finalLeaf
-#> 1: -0.003396076 -0.04969885         3
+#>        none       crim           zn     indus       chas      nox        rm
+#> 1: 34.19573 -0.3102618 -0.005457964 0.1946273 -0.1216814 1.159332 -3.260457
+#>           age        dis        rad       tax   ptratio      black     lstat
+#> 1: 0.08411667 -0.3871038 -0.2375765 0.3034294 -1.093994 -0.1602463 0.6558048
+#>    finalLeaf
+#> 1:         4
 ```
 
 Although the difference in calculation speed between and is quite large,
@@ -349,7 +350,7 @@ decisionplot(Model, testObs = pick_obs_1$df ,
              varImp = "shapImp",final.rule = 5, Yrange = TRUE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-25-1.png" width="80%" />
+<img src="man/figures/README-decisionplot-1.png" width="80%" />
 
 ``` r
 
@@ -360,7 +361,7 @@ decisionplot(Model, testObs = pick_obs_4$df ,
              varImp = "shapImp",final.rule = 5, Yrange = FALSE)
 ```
 
-<img src="man/figures/README-unnamed-chunk-25-2.png" width="80%" />
+<img src="man/figures/README-decisionplot-2.png" width="80%" />
 
 ### Collaboration with other packages
 
@@ -414,23 +415,23 @@ DALEX::model_performance(new_explainer)
 DALEX::model_performance(new_explainer) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-27-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-28-1.png" width="80%" />
 
 ``` r
 DALEX::model_profile(new_explainer, variables = "rm") %>%
   plot(geom="profiles")
 ```
 
-<img src="man/figures/README-unnamed-chunk-30-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-29-1.png" width="80%" />
 
 ``` r
 DALEX::predict_parts(new_explainer, new_observation = sample_one) %>% plot()
 ```
 
-<img src="man/figures/README-unnamed-chunk-31-1.png" width="80%" />
+<img src="man/figures/README-unnamed-chunk-30-1.png" width="80%" />

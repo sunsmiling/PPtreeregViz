@@ -117,6 +117,7 @@
 <span><span class="va">idx_train</span> <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">Boston</span><span class="op">)</span>, size <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/Round.html" class="external-link">round</a></span><span class="op">(</span><span class="va">proportion</span> <span class="op">*</span> <span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">Boston</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="va">sample_train</span> <span class="op">=</span> <span class="va">Boston</span><span class="op">[</span><span class="va">idx_train</span>, <span class="op">]</span></span>
 <span><span class="va">sample_test</span> <span class="op">=</span>  <span class="va">Boston</span><span class="op">[</span><span class="op">-</span><span class="va">idx_train</span>, <span class="op">]</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">1234</span><span class="op">)</span></span>
 <span><span class="va">sample_one</span> <span class="op">&lt;-</span> <span class="va">sample_test</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/sample.html" class="external-link">sample</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fu"><a href="https://rdrr.io/r/base/nrow.html" class="external-link">nrow</a></span><span class="op">(</span><span class="va">sample_test</span><span class="op">)</span>,<span class="fl">1</span><span class="op">)</span>,<span class="op">-</span><span class="fl">14</span><span class="op">]</span></span></code></pre></div>
 </div>
 </div>
@@ -201,17 +202,17 @@
 <p>So far, we have only seen the global movement of the model itself. From now on, we will proceed with model analysis using SHAP values. Using the SHAP value, you can see locally how one sample data moves in the model. In order to calculate the SHAP value more faster, the method for calculating the kernel shap of the package was slightly modified and used.</p>
 <div class="sourceCode" id="cb19"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">sample_one</span></span>
-<span><span class="co">#&gt;        crim zn indus chas  nox   rm  age    dis rad tax ptratio  black lstat</span></span>
-<span><span class="co">#&gt; 177 0.07022  0  4.05    0 0.51 6.02 47.2 3.5549   5 296    16.6 393.23 10.11</span></span></code></pre></div>
+<span><span class="co">#&gt;       crim zn indus chas   nox    rm  age    dis rad tax ptratio black lstat</span></span>
+<span><span class="co">#&gt; 81 0.04113 25  4.86    0 0.426 6.727 33.5 5.4007   4 281      19 396.9  5.29</span></span></code></pre></div>
 <p>Since the <code>empirical</code> method, which is a more accurate calculation method, takes more time to calculate, a <code>simple</code> calculation method, which is an estimate of this value, was used.</p>
 <div class="sourceCode" id="cb20"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/ppshapr.simple.html">ppshapr.simple</a></span><span class="op">(</span>PPTreeregOBJ <span class="op">=</span> <span class="va">Model</span>, testObs <span class="op">=</span> <span class="va">sample_one</span>, final.rule <span class="op">=</span> <span class="fl">5</span><span class="op">)</span><span class="op">$</span><span class="va">dt</span></span>
-<span><span class="co">#&gt;        none         crim           zn       indus        chas           nox</span></span>
-<span><span class="co">#&gt; 1: 23.25114 -0.008369025 -0.007357408 0.009685125 -0.00178154 -0.0002517925</span></span>
-<span><span class="co">#&gt;              rm        age        dis          rad         tax     ptratio</span></span>
-<span><span class="co">#&gt; 1: -0.008369025 0.06894799 0.04018246 -0.006113893 0.009685125 0.009685125</span></span>
-<span><span class="co">#&gt;           black       lstat finalLeaf</span></span>
-<span><span class="co">#&gt; 1: -0.003396076 -0.04969885         3</span></span></code></pre></div>
+<span><span class="co">#&gt;        none       crim           zn     indus       chas      nox        rm</span></span>
+<span><span class="co">#&gt; 1: 34.19573 -0.3102618 -0.005457964 0.1946273 -0.1216814 1.159332 -3.260457</span></span>
+<span><span class="co">#&gt;           age        dis        rad       tax   ptratio      black     lstat</span></span>
+<span><span class="co">#&gt; 1: 0.08411667 -0.3871038 -0.2375765 0.3034294 -1.093994 -0.1602463 0.6558048</span></span>
+<span><span class="co">#&gt;    finalLeaf</span></span>
+<span><span class="co">#&gt; 1:         4</span></span></code></pre></div>
 <p>Although the difference in calculation speed between and is quite large, it can be seen that the results are similar.</p>
 </div>
 <div class="section level3">
@@ -270,7 +271,7 @@
 <code class="sourceCode R"><span><span class="fu"><a href="reference/decisionplot.html">decisionplot</a></span><span class="op">(</span><span class="va">Model</span>, testObs <span class="op">=</span> <span class="va">pick_obs_1</span><span class="op">$</span><span class="va">df</span> ,</span>
 <span>             method<span class="op">=</span><span class="st">"simple"</span>,</span>
 <span>             varImp <span class="op">=</span> <span class="st">"shapImp"</span>,final.rule <span class="op">=</span> <span class="fl">5</span>, Yrange <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-25-1.png" width="80%"></p>
+<p><img src="reference/figures/README-decisionplot-1.png" width="80%"></p>
 <div class="sourceCode" id="cb31"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span></span>
 <span></span>
@@ -278,7 +279,7 @@
 <span><span class="fu"><a href="reference/decisionplot.html">decisionplot</a></span><span class="op">(</span><span class="va">Model</span>, testObs <span class="op">=</span> <span class="va">pick_obs_4</span><span class="op">$</span><span class="va">df</span> ,</span>
 <span>             method<span class="op">=</span><span class="st">"simple"</span>,</span>
 <span>             varImp <span class="op">=</span> <span class="st">"shapImp"</span>,final.rule <span class="op">=</span> <span class="fl">5</span>, Yrange <span class="op">=</span> <span class="cn">FALSE</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-25-2.png" width="80%"></p>
+<p><img src="reference/figures/README-decisionplot-2.png" width="80%"></p>
 </div>
 <div class="section level3">
 <h3 id="collaboration-with-other-packages">Collaboration with other packages<a class="anchor" aria-label="anchor" href="#collaboration-with-other-packages"></a>
@@ -323,17 +324,17 @@
 <span><span class="co">#&gt;   0.57727933   1.21600562   2.26041174   4.14090308  29.68961335</span></span></code></pre></div>
 <div class="sourceCode" id="cb34"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">DALEX</span><span class="fu">::</span><span class="fu"><a href="https://modeloriented.github.io/DALEX/reference/model_performance.html" class="external-link">model_performance</a></span><span class="op">(</span><span class="va">new_explainer</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/plot.PPTreereg.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-28-1.png" width="80%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-27-1.png" width="80%"></p>
 <div class="sourceCode" id="cb35"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">DALEX</span><span class="fu">::</span><span class="fu"><a href="https://modeloriented.github.io/DALEX/reference/model_profile.html" class="external-link">model_profile</a></span><span class="op">(</span><span class="va">new_explainer</span>, variables <span class="op">=</span> <span class="st">"rm"</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/plot.PPTreereg.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-29-1.png" width="80%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-28-1.png" width="80%"></p>
 <div class="sourceCode" id="cb36"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">DALEX</span><span class="fu">::</span><span class="fu"><a href="https://modeloriented.github.io/DALEX/reference/model_profile.html" class="external-link">model_profile</a></span><span class="op">(</span><span class="va">new_explainer</span>, variables <span class="op">=</span> <span class="st">"rm"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>  <span class="fu"><a href="reference/plot.PPTreereg.html">plot</a></span><span class="op">(</span>geom<span class="op">=</span><span class="st">"profiles"</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-30-1.png" width="80%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-29-1.png" width="80%"></p>
 <div class="sourceCode" id="cb37"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">DALEX</span><span class="fu">::</span><span class="fu"><a href="https://modeloriented.github.io/DALEX/reference/predict_parts.html" class="external-link">predict_parts</a></span><span class="op">(</span><span class="va">new_explainer</span>, new_observation <span class="op">=</span> <span class="va">sample_one</span><span class="op">)</span> <span class="op">%&gt;%</span> <span class="fu"><a href="reference/plot.PPTreereg.html">plot</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-31-1.png" width="80%"></p>
+<p><img src="reference/figures/README-unnamed-chunk-30-1.png" width="80%"></p>
 </div>
 </div>
 </div>

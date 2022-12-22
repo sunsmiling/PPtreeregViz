@@ -6,6 +6,7 @@
 #' @param c choose node id to summary. Default value is FALSE.
 #' @param ... arguments to be passed to methods
 #' @aliases summary.PPTreereg
+#' @return coefficient results of tree
 #' @export
 
 summary.PPTreereg<-function(object,c=NA, ...){

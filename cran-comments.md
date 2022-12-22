@@ -1,3 +1,33 @@
+### Third submission
+---
+
+* Version: 2.0.4
+
+* Response to cran comments
+
+> Please proof-read your description text.
+e.g.: in your first sentence it should probably be "tool" instead of "tools"? in "... finding connections between the input variables and outputs of model." there should probably be a "the" between "of" and "model".
+
+==>  Thanks!! I used grammer checker and rewrite description text!
+
+> You missed to add \value in one of your .Rd-files. Please also add it there.
+Missing Rd-tags:
+     summary.PPTreereg.Rd: \value
+     
+==> I added Rd-tags again. Thank you!
+
+ summary.PPTreereg.Rd: \value  (done)
+
+
+Thank you for comments!
+
+
+## R CMD check results
+
+0 errors | 0 warnings | 1 note
+
+* This is a third release.
+ 
 ### Second submission
 ---
 

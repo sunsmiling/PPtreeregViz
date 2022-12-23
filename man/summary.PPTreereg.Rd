@@ -13,6 +13,9 @@
 
 \item{...}{arguments to be passed to methods}
 }
+\value{
+coefficient results of tree
+}
 \description{
 summary \code{PPTreereg} result
 }

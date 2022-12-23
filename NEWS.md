@@ -1,3 +1,9 @@
+# PPtreeregViz 2.0.5
+---
+* Added all missing Rd-tags regarding exported methods and explain
+the functions results in the documentation.
+
+
 # PPtreeregViz 2.0.3
 ---
 * minor code fixes in 'subpick()' 

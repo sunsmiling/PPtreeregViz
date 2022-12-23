@@ -1,3 +1,32 @@
+### 4th submission
+---
+
+* Version: 2.0.5
+
+* Response to cran comments
+
+> You still have no \value tag in:
+Missing Rd-tags:
+     summary.PPTreereg.Rd: \value
+
+> Please make sure to also roxygenize() your .Rd-files. In the
+corresponding .R-file the @return value actually exists. My guess is you
+have not rendered the .Rd-file before submitting.
+
+==> Thank you for comments!! I rendered again and checked '\value' tag in 'summary.PPTreereg.Rd'.  
+
+#####  R CMD check results
+
+── R CMD check results  PPtreeregViz 2.0.5 ───
+Duration: 2m 5.3s
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+
+R CMD check succeeded
+
+* This is a 4th release.
+
+
 ### Third submission
 ---
 
@@ -22,9 +51,13 @@ Missing Rd-tags:
 Thank you for comments!
 
 
-## R CMD check results
+#####  R CMD check results
 
-0 errors | 0 warnings | 1 note
+── R CMD check results  PPtreeregViz 2.0.4 ───
+
+0 errors ✔ | 0 warnings ✔ | 0 notes ✔
+
+R CMD check succeeded
 
 * This is a third release.
  
@@ -81,7 +114,7 @@ Thank you for comments!
 
 ## R CMD check results
 
-0 errors | 0 warnings | 1 note
+0 errors ✔ | 0 warnings ✔ | 1 notes ✔
 
 * This is a second release.
 This is a major release adding a range of substantial new features and fixing a large number of bugs.

@@ -76,7 +76,7 @@ print.PPTreereg<-function(x,tree.print=TRUE,coef.print=FALSE,
    rownames(cut.off)<-paste("cut",1:nrow(cut.off),sep="")
    TreePrint.output<-paste(
       "=============================================================",
-      "\nProjection Pursuit Classification Tree result",
+      "\nProjection Pursuit Regression Tree result",
       "\n=============================================================\n")
    for(i in 1:length(TreePrint))
       TreePrint.output<-paste(TreePrint.output,TreePrint[i],sep="\n")

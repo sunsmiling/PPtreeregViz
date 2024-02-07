@@ -45,4 +45,4 @@ Suggests:
     covr
 LinkingTo: Rcpp, RcppArmadillo
 VignetteBuilder: knitr
-URL: https://github.com/sunsmiling/PPtreeregViz
+URL: https://github.com/sunsmiling/PPtreeregViz, https://sunsmiling.github.io/PPtreeregViz/
